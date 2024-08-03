@@ -1,3 +1,5 @@
+# HOW TO GET STARTED
+
 This app makes use of AI71 API Hub to connect Falcon LLM and Cohere for Embedding and Semantic Search in addition to Weaviate for Vector Database, to get started you need to name env to .env and add APIs from corresponding hubs
 
 # AI71 API HUB: https://marketplace.ai71.ai/
