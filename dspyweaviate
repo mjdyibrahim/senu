@@ -3,7 +3,9 @@ import dspy
 import openai
 import weaviate
 import weaviate.classes.config as wvcc
+from dspy.retrieve.weaviate_rm import WeaviateRM
 from dotenv import load_dotenv
+from DSPyevaluate import EvaluateTeamSection
 
 # Load environment variables
 load_dotenv()
@@ -45,13 +47,14 @@ collection = weaviate_client.collections.create(
 
 falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
 
+weaviate_rm = WeaviateRM("senu", weaviate_client)
 
 # Configure DSPy with the custom function
-dspy.configure(lm=falcon_lm)
+dspy.configure(lm=falcon_lm, rm=weaviate_rm)
 
 # Define a DSPy module
-qa = dspy.ChainOfThought('question -> answer')
+evaluate_team = dspy.ChainOfThought(EvaluateTeamSection)
 
 # Example usage
-response = qa(question="How strong is the team described in the uploaded pitch deck?")
-print(response.answer)
+response = evaluate_team(team_content="Startup has a single cofounder with no previous startup experience")
+print(response.team_score)

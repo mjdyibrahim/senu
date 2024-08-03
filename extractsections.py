@@ -1,8 +1,13 @@
+import os
+from dotenv import load_dotenv
 from ai71 import AI71
 import fitz 
 import re
 
-AI71_API_KEY = "api71-api-6bc3941d-75c3-4fac-a3ca-c692983f395f"
+load_dotenv()
+
+AI71_API_KEY = os.getenv("AI71_API_KEY")
+
 client = AI71(AI71_API_KEY)
 
 def process_pitch_deck(filename):
@@ -42,8 +47,8 @@ def extract_scores_from_scorecard(scorecard_text):
         "Market": 6,
         "Business Model": 5,
         "Product": 8,
-        "Traction/Sales": 4,
-        "Finances/Fundraising": 7,
+        "Traction": 4,
+        "Fundraising": 7,
         "Innovation": 9
     }
     return scores
@@ -60,13 +65,14 @@ def extract_text_from_pitch_deck(filename):
 
     # Define sections to look for
     sections = {
+        "Info": "",
         "Team": "",
         "Market": "",
         "Business Model": "",
         "Product": "",
-        "Traction/Sales": "",
-        "Finance/Fundraising": "",
-        "Innovation/USP": ""
+        "Traction": "",
+        "Fundraising": ""
+        
     }
 
     # Use regular expressions to find sections
@@ -75,7 +81,7 @@ def extract_text_from_pitch_deck(filename):
         line = line.strip()
         if line:
             # Check if the line matches a section header
-            if re.match(r'^(Team|Market|Business Model|Product|Traction/Sales|Finance/Fundraising|Innovation/USP)', line, re.IGNORECASE):
+            if re.match(r'^(Info|Team|Market|Business Model|Product|Traction/Sales|Finance/Fundraising)', line, re.IGNORECASE):
                 current_section = line.split()[0]
                 sections[current_section] = line
             elif current_section:
@@ -84,7 +90,7 @@ def extract_text_from_pitch_deck(filename):
     return sections
 
 # Example usage
-filename = "pitchdeck.pdf"
+filename = "uploads/pitchdeck.pdf"
 extracted_sections = extract_text_from_pitch_deck(filename)
 for section, content in extracted_sections.items():
     print(f"{section}:\n{content}\n")

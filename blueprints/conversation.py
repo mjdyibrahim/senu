@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for
-import dsp
+import extractsections
 
 conversation_bp = Blueprint('conversation', __name__)
 
@@ -17,7 +17,7 @@ def conversation():
             "Cofounder Successful Exit": request.form['cofounder_exit'],
             "Category of Tasks and Competence": request.form['team_competence']
         }
-        scorecard, scores = dsp.generate_scorecard(user_data)
-        dsp.generate_spider_graph(scores)
+        scorecard, scores = extractsections.generate_scorecard(user_data)
+        extractsections.generate_spider_graph(scores)
         return redirect(url_for('result.show_result'))
     return render_template('conversation.html')
