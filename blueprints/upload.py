@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 import os
-import falcon
+import extractsections
 
 upload_bp = Blueprint('upload', __name__)
 
@@ -16,9 +16,9 @@ def upload_pitch_deck():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join('uploads/pitch_decks', filename))
-            pitch_deck_text = falcon.process_pitch_deck(filename)
-            scorecard, scores = falcon.generate_scorecard(pitch_deck_text)
-            falcon.generate_spider_graph(scores)
+            pitch_deck_text = extractsections.process_pitch_deck(filename)
+            scorecard, scores = extractsections.generate_scorecard(pitch_deck_text)
+            extractsections.generate_spider_graph(scores)
             return redirect(url_for('result.show_result', scorecard=scorecard))
     return render_template('upload.html')
 

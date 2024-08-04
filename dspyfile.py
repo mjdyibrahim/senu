@@ -1,3 +1,4 @@
+import sys
 import os
 import dspy
 import openai
@@ -10,11 +11,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 import phoenix as px
 from openinference.instrumentation.dspy import DSPyInstrumentor
+import logging
+
 
 DSPyInstrumentor().instrument()
 
+# Set up logging to use UTF-8 encoding
+handler = logging.StreamHandler(sys.stdout)
+handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+handler.setStream(sys.stdout)
+logging.getLogger().addHandler(handler)
+logging.getLogger().setLevel(logging.INFO)
+
+
 session = px.launch_app()
-session.view()
 
 # Load environment variables
 load_dotenv()
