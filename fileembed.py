@@ -6,11 +6,11 @@ import numpy as np
 from tqdm import tqdm
 from dotenv import load_dotenv
 import weaviate
+import json
 from weaviate.classes.init import Auth
-import cohere
+import weaviate.classes.config as wvcc
 
-# Define the path to the marker file
-marker_file_path = "weaviate_class_created.txt"
+import cohere
 
 # Load environment variables
 load_dotenv()
@@ -65,22 +65,27 @@ def data_cleaning(text):
 
 def create_weaviate_class():
     # Check if the class already exists in Weaviate
-    if not client.collections.exists("Senu"):
+    if not client.collections.exists("senu"):
         # Define a data collection (class) in Weaviate
         try:
             collection = client.collections.create(
-                name="Senu",
+                name="senu",
                 vectorizer_config=weaviate.classes.config.Configure.Vectorizer.text2vec_cohere(),
-                generative_config=weaviate.classes.config.Configure.Generative.cohere()
-                )
+                generative_config=weaviate.classes.config.Configure.Generative.cohere(
+                    model="embed-multilingual-v3.0"
+                ),
+                properties=[
+                        wvcc.Property(name="startup", data_type=wvcc.DataType.TEXT),
+                        wvcc.Property(name="text", data_type=wvcc.DataType.TEXT),
+                        wvcc.Property(name="embedding", data_type=wvcc.DataType.INT_ARRAY),
+                ]
+            )
 
         finally:
             client.close()
-        
-        # Create the marker file
-        with open(marker_file_path, "w") as f:
-            f.write("Weaviate class created")
+    
         print("Weaviate class 'Senu' created.")
+
     else:
         print("Weaviate class 'Senu' already exists.")
 
@@ -112,10 +117,12 @@ def process_pdf(filepath, mode="str"):
 
         # Process embeddings for the text
         for embedding in tqdm(embeds):
+        
             # Create a Weaviate object with the text and embedding
             object_data = {
+                "startup": filename,
                 "text": text_data,
-                "embedding": embedding
+                "embedding": json.dumps(convert_embedding_to_int_array(embedding))
             }
 
             try: 
@@ -132,13 +139,20 @@ def process_pdf(filepath, mode="str"):
 
     return text_data, client, embeds
 
+def convert_embedding_to_int_array(embedding):
+            # Convert to a NumPy array
+            embedding_array = np.array(embedding)
+            # Convert to integers (e.g., rounding or casting)
+            int_array = embedding_array.astype(int)
+            # Convert to list for JSON serialization
+            return int_array.tolist()
 
 def main():
     # Call create_weaviate_class() to ensure the class is created before processing files
     create_weaviate_class()
 
     # Process each file
-    file_paths = ["uploads/pitchdeck.pdf"]  # Example file paths, replace with your actual file paths
+    file_paths = ["uploads/lyla.pdf"]  # Example file paths, replace with your actual file paths
     for file_path in file_paths:
         process_pdf(file_path)
 

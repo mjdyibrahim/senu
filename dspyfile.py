@@ -2,29 +2,16 @@ import sys
 import os
 import dspy
 import openai
+import cohere
 import weaviate
+from weaviate.classes.init import Auth
 import weaviate.classes.config as wvcc
 from dspy.retrieve.weaviate_rm import WeaviateRM
 from dotenv import load_dotenv
 from DSPyevaluate import *
 import matplotlib.pyplot as plt
 import numpy as np
-import phoenix as px
-from openinference.instrumentation.dspy import DSPyInstrumentor
-import logging
-
-
-DSPyInstrumentor().instrument()
-
-# Set up logging to use UTF-8 encoding
-handler = logging.StreamHandler(sys.stdout)
-handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
-handler.setStream(sys.stdout)
-logging.getLogger().addHandler(handler)
-logging.getLogger().setLevel(logging.INFO)
-
-
-session = px.launch_app()
+import json
 
 # Load environment variables
 load_dotenv()
@@ -38,22 +25,80 @@ WEAVIATE_URL = os.getenv("WEAVIATE_URL")
 
 
 # Initialize the OpenAI client for AI71
-client = openai.OpenAI(
+ai71_client = openai.OpenAI(
     api_key=AI71_API_KEY,
     base_url=AI71_BASE_URL,
 )
 
-falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+# Connect to Weaviate
+weaviate_client = weaviate.connect_to_weaviate_cloud(
+    cluster_url=WEAVIATE_URL,
+    auth_credentials=Auth.api_key(api_key=WEAVIATE_API_KEY),
+    headers={'X-Cohere-Api-Key': COHERE_API_KEY} 
+)
 
-# Configure DSPy with the custom function
-dspy.configure(lm=falcon_lm)
+# Connect to Cohere
+co = cohere.Client(COHERE_API_KEY)
+
+collection = weaviate_client.collections.get(name="senu")
+
+falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+weaviate_rm = WeaviateRM("senu", weaviate_client)
+
+def query_latest_startup_content():
+    # Connect to Weaviate and retrieve the collection
+    collection = weaviate_client.collections.get("senu")
+
+    # Query for objects with the specific startup name
+    response = collection.query.get("senu", ["text", "embedding", "metadata"]) \
+        .with_where({
+            "path": ["startup"],
+            "operator": "Equal",
+            "valueText": startup_name
+        }) \
+        .with_limit(10) \
+        .do()
+
+    # Check if any results are returned
+    if response["data"]["Get"]["senu"]:
+        # Get the latest object
+        latest_obj = response["data"]["Get"]["senu"][0]
+        # Deserialize the embedding from JSON
+        latest_obj["embedding"] = json.loads(latest_obj["embedding"])
+        # Extract the text content
+        text_content = latest_obj["text"]
+        return text_content
+    else:
+        return None
+    
+# Get startup name
+startup_name = input("What is your startup name?")
+
+# Example usage
+latest_content = query_latest_startup_content(startup_name)
+
+if latest_content:
+    # Configure DSPy with the custom function
+    dspy.configure(lm=falcon_lm, rm=weaviate_rm)
+    
+    # Evaluate Team
+    evaluate_team = dspy.Predict(EvaluateTeamSection, n=1)
+    
+    # Pass the content from embedding to DSPy
+    team_response = evaluate_team(team_content=latest_content)
+    team_score = team_response.team_score
+    team_feedback = team_response.team_feedback
+    
+    print(f"""Team Score: {team_score}/10
+    Team Suggestions: 
+    {team_feedback}""")
+else:
+    print("No content found for evaluation.")
 
 # Evaluate Team
 evaluate_team = dspy.Predict(EvaluateTeamSection, n=1)
 
-team_content = input("Tell us about your team: ")
-
-team_response = evaluate_team(team_content=team_content)
+team_response = evaluate_team(team_content=latest_content)
 team_score = team_response.team_score
 team_feedback = team_response.team_feedback
 
