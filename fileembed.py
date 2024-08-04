@@ -58,9 +58,26 @@ def remove_footnotes(text):
 
 def data_cleaning(text):
     '''Removes hyperlinks and non-essential characters, and changes text to lowercase'''
-    text = re.sub(r'http\S+', '', text)
+    for idx, word in enumerate(text):
+        if re.match(r'^\$\d+(,\d{3})*$', word):
+            text[idx] = re.sub(r',', '', word)
+    
+    #removes phone numbers    
+    phone_pattern = r'(\+?\d{1,4}[\s.-]?)?(\(?\d{1,4}\)?[\s.-]?)?\d{1,4}[\s.-]?\d{1,4}[\s.-]?\d{1,9}'
+    text = re.sub(phone_pattern, '', text).strip()
+
+    #removes bullets
+    bullet_pattern = r'^\s*(?:[\d]+[.\)\-]|\s*[-*•]+)\s*'
+    text = re.sub(bullet_pattern, '', text, flags=re.MULTILINE).strip()
+
+    #removes hyperlinks
+    url_pattern = r'\bhttps?:\/\/\S+|www\.\S+|@\S+'
+    text = re.sub(url_pattern, '', text).strip()
+    
+    #removes non alphanumeric characters
     text = re.sub(r"[^a-zA-Z0-9 %$]", " ", text)
     text = text.lower()
+    
     return text
 
 def create_weaviate_class():
