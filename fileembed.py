@@ -115,13 +115,13 @@ def process_pdf(filepath, mode="str"):
             # Create a Weaviate object with the text and embedding
             object_data = {
                 "text": text_data,
-                "embedding": embedding  # No need to convert to list
+                "embedding": embedding
             }
 
             try: 
                 # Add the object to the Weaviate collection
                 collection = client.collections.get("Senu")
-                collection.data.insert_many(object_data)
+                collection.data.insert(object_data)
             finally:
                 client.close
             
