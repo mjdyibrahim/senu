@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
 import os
 from werkzeug.utils import secure_filename
-import fitz
+import PyMuPDF
 import re
 import numpy as np
 import matplotlib
@@ -9,7 +9,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 import dspy
-from DSPyevaluate import *
+import DSPyevaluate
 
 
 # Load environment variables
@@ -57,7 +57,7 @@ def process_pdf(filepath: str) -> str:
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"File not found: {filepath}")
     
-    document = fitz.open(filepath)
+    document = PyMuPDF.open(filepath)
     text_data = ""
     
     for page_num in range(len(document)):
