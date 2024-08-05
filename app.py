@@ -208,5 +208,22 @@ def upload_file():
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
+
+@app.route('/entrepreneur')
+def entrepreneur():
+    return render_template('entrepreneur.html')
+
+@app.route('/feedback')
+def feedback():
+    return render_template('feedback.html')
+
+@app.route('/resources')
+def resources():
+    return render_template('resources.html')
+
+@app.route('/signin')
+def signin():
+    return render_template('signin.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

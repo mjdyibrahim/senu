@@ -956,3 +956,85 @@ Using categorical units to plot a list of strings that are all parsable as float
 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 127.0.0.1 - - [05/Aug/2024 14:15:51] "POST /upload HTTP/1.1" 200 -
 127.0.0.1 - - [05/Aug/2024 14:15:51] "GET /uploads/LYLA-PITCH-DECK-v0.3_spider_graph.png HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 14:40:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:40:55] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:40:55] "GET /static/scripts.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:40:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:40:58] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:40:59] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:40:59] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:03] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:41:04] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:04] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:41:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:41:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:41:13] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:41:14] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:14] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:17] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:41:18] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:18] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:22] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:41:22] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:41:22] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:43:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:43:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:43:04] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:43:06] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:43:07] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:43:07] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:45:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:45:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:45:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:45:12] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:45:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:45:12] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:45:16] "[33mGET /feedback.html HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:45:21] "[33mGET /feedback.html HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:45:24] "[33mGET /resources.html HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 14:48:15] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:16] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:17] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:17] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:18] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:19] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:19] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:20] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:22] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:23] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:29] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:29] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:29] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:30] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:31] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:31] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:32] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 14:48:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 14:48:42] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 14:48:42] "GET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1" 200 -

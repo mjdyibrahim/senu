@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In - Senu</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -12,11 +12,11 @@
         <nav>
             <div class="logo">Senu</div>
             <ul class="nav-links">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="entrepreneur.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="feedback.html"><i class="fas fa-chart-line"></i> Feedback</a></li>
-                <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
-                <li><a href="signin.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('entrepreneur') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="{{ url_for('feedback') }}"><i class="fas fa-chart-line"></i> Feedback</a></li>
+                <li><a href="{{ url_for('resources') }}"><i class="fas fa-book"></i> Resources</a></li>
+                <li><a href="{{ url_for('signin') }}"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
             </ul>
         </nav>
     </header>
@@ -33,6 +33,6 @@
     <footer>
         <p>&copy; 2024 Senu. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="static/scripts.js"></script>
 </body>
 </html>

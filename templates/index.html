@@ -12,11 +12,11 @@
         <nav>
             <div class="logo">Senu</div>
             <ul class="nav-links">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="entrepreneur.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="feedback.html"><i class="fas fa-chart-line"></i> Feedback</a></li>
-                <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
-                <li><a href="signin.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('entrepreneur') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="{{ url_for('feedback') }}"><i class="fas fa-chart-line"></i> Feedback</a></li>
+                <li><a href="{{ url_for('resources') }}"><i class="fas fa-book"></i> Resources</a></li>
+                <li><a href="{{ url_for('signin') }}"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
             </ul>
         </nav>
     </header>
