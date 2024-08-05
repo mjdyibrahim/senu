@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
 import os
 from werkzeug.utils import secure_filename
-import fitz
+import pymupdf
 import re
 import numpy as np
 import matplotlib
@@ -57,7 +57,7 @@ def process_pdf(filepath: str) -> str:
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"File not found: {filepath}")
     
-    document = fitz.open(filepath)
+    document = pymupdf.open(filepath)
     text_data = ""
     
     for page_num in range(len(document)):
