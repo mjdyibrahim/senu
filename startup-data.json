@@ -1,0 +1,137 @@
+{
+    "Info": {
+      "Startup Name": "",
+      "Date Started": "",
+      "Registration Type": "",
+      "Registration Country": "",
+      "Contact Info": ""
+    },
+    "Team": {
+      "Number of Team Members": 0,
+      "Team Members": [
+        {
+          "Name": "",
+          "Title": "",
+          "Availability Per Week": "",
+          "Involved Since": "",
+          "Equity %": 0,
+          "Salary %": 0,
+          "Years of Experience": 0,
+          "Academic Degree": {
+            "Undergraduate": false,
+            "Graduate Degree": false,
+            "Masters": false,
+            "PhD or more": false
+          },
+          "Startup Experience": {
+            "Has Been Part of a Startup Team": false,
+            "Has Been the Founder of a Startup": false,
+            "Has Previous C-Level Position": false,
+            "Has Been Part of a Successful Exit": false
+          },
+          "Role": {
+            "Marketing": false,
+            "Sales": false,
+            "Product": false,
+            "Creative": false,
+            "Technical": false,
+            "Operation": false,
+            "Other": ""
+          }
+        }
+      ],
+      "Team Overview": "",
+      "Team Execution Ability": ""
+    },
+    "Fundraising": {
+      "Currently Raising": 0,
+      "Raised So Far": 0,
+      "Source of Funds": {
+        "Founders": false,
+        "Friends and Family": false,
+        "Crowdfunding": false,
+        "Accelerator": false,
+        "Angel Investor": false,
+        "VC": false
+      },
+      "Fund Spending": {
+        "Product": false,
+        "Marketing": false,
+        "Team": false,
+        "Operations": false
+      },
+      "Patents Received": false,
+      "Significant Achievements": false,
+      "Pitch Deck Ready": false
+    },
+    "Market": {
+      "Current Consumer Spending": 0,
+      "Market Size": 0,
+      "Planned Market Share in 3 Years": 0
+    },
+    "Business Model": {
+      "Primary Industry": "",
+      "Revenue Source": {
+        "Capital": false,
+        "Content": false,
+        "Data/Information": false,
+        "Goods/Widgets (Resellers)": false,
+        "Goods/Widgets (Producers)": false,
+        "Hard Science": false,
+        "Network or Community": false,
+        "Non-Physical Direct to Consumer": false,
+        "Physical Direct to Consumer": false,
+        "Services": false,
+        "Technology/Platform": false,
+        "Other": ""
+      },
+      "Revenue Model": {
+        "Advertising": false,
+        "Pay Per Unit": false,
+        "Pay Per Project": false,
+        "Brokerage or Marketplace": {
+          "Consumer to Consumer": false,
+          "Enterprise to Enterprise": false,
+          "Enterprise to Consumer": false
+        },
+        "Recurring": false,
+        "Other": ""
+      },
+      "Customer Acquisition": {
+        "Online Advertising": {
+          "Everyone": false,
+          "Niche": false
+        },
+        "Strategic Partnership": false,
+        "Affiliate Marketing": false,
+        "Conferences & Exhibitions": false,
+        "Virtual / Word of Mouth": false
+      },
+      "Sales & Marketing Spend %": {
+        "10": false,
+        "20": false,
+        "30": false
+      },
+      "User Base": {
+        "Everyone": false,
+        "Niche": false
+      }
+    },
+    "Product": {
+      "Development Stage": {
+        "Idea": false,
+        "Prototype": false,
+        "Beta": false,
+        "Live": false
+      },
+      "Prospective Customers Interviewed": 0,
+      "Purchase Interest %": 0
+    },
+    "Traction": {
+      "Sales and Revenue Started": false,
+      "Revenue Last 12 Months": 0,
+      "Revenue Last 3 Months": 0,
+      "Number of Sales Leads": 0
+    }
+  }
+  

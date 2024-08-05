@@ -1,4 +1,5 @@
 ai71==0.0.18
+cohere==4.7.0
 aiohappyeyeballs==2.3.2
 aiohttp==3.10.0
 aioitertools==0.11.0

@@ -12,9 +12,9 @@ client = AI71(AI71_API_KEY)
 messages = [{"role": "system", "content": "You are a helpful assistant."}]
 
 while True:
-    content = input(f"User:")
+    content = input(f"User: ")
     messages.append({"role": "user", "content": content})
-    print(f"Falcon:", sep="", end="", flush=True)
+    print(f"Falcon: ", sep="", end="", flush=True)
     content = ""
 
     for chunk in client.chat.completions.create(

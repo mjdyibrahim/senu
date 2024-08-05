@@ -1,6 +1,6 @@
 # HOW TO GET STARTED
 
-This app makes use of AI71 API Hub to connect Falcon LLM and Cohere for Embedding and Semantic Search in addition to Weaviate for Vector Database, to get started you need to name env to .env and add APIs from corresponding hubs
+This app makes use of AI71 API Hub to connect Falcon LLM and Cohere for Embedding and Semantic Search in addition to Weaviate for Vector Database, to get started you need to re-name .env-example to .env and add APIs from corresponding hubs
 
 # AI71 API HUB: https://marketplace.ai71.ai/
 
@@ -18,4 +18,14 @@ Create Weaviate Cluster and add Cluster API and URL
 WEAVIATE_API_KEY=""
 WEAVIATE_URL=""
 
+# Instal all required packages
+
+pip install -r requirements.txt
+
+* latest cohere version conflicts with dspy, keep it at its current version
+
 # Running the App
+
+The App is built with flask 
+
+python app.py
