@@ -74,12 +74,17 @@ def evaluate_section(section_name, evaluation_class, content):
     response = evaluate(**{f"{section_name}_content": content})
     score = getattr(response, f"{section_name}_score")
     feedback = getattr(response, f"{section_name}_feedback")
+
+
     return score, feedback
 
 # Function to create spider graph
 def create_spider_graph(startup_name, scores):
     categories = list(scores.keys())
     values = list(scores.values())
+
+    # Convert values to floats for plotting
+    values = [float(val) for val in values]
     
     # Adding the first value to the end to close the circular graph
     values += values[:1]
@@ -177,7 +182,9 @@ def upload_file():
             scores = {}
             feedback = {}
             for section_name, evaluation_class in sections.items():
+                print(f"Evaluating section: {section_name}") # eval
                 score, feedback[section_name] = evaluate_section(section_name, evaluation_class, pitchdeck_text)
+                print(f"Score: {score}, Feedback: {feedback}") # eval 
                 scores[section_name.replace('_', ' ').title()] = score
 
             # Generate spider graph
@@ -194,8 +201,9 @@ def upload_file():
 
             # Format and include feedback
             for section, section_feedback in feedback.items():
+                section_score = scores.get(section.replace('_', ' ').title(), 0)
                 formatted_feedback = format_feedback_to_html(section_feedback)
-                output_html += f"""<div class="feedback-box"><h4>{section.replace('_', ' ').title()} Feedback: ({score}/10)</h4>{formatted_feedback}</div>"""
+                output_html += f"""<div class="feedback-box"><h4>{section.replace('_', ' ').title()} Feedback: ({section_score}/10)</h4>{formatted_feedback}</div>"""
 
             return output_html
 

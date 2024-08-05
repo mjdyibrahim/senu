@@ -1038,3 +1038,291 @@ Using categorical units to plot a list of strings that are all parsable as float
 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 127.0.0.1 - - [05/Aug/2024 14:48:42] "POST /upload HTTP/1.1" 200 -
 127.0.0.1 - - [05/Aug/2024 14:48:42] "GET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 15:27:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 15:27:20] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 15:27:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 15:27:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 15:27:35] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 15:27:36] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 15:41:05] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 15:41:05] "GET /uploads/LYLA-PITCH-DECK_v1.6_spider_graph.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 15:55:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 15:55:32] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 15:55:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 16:29:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 16:29:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 16:29:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 16:33:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 16:33:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 16:33:25] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 16:33:32] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 16:33:32] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 16:33:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 16:33:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 16:33:38] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 16:51:21] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 16:53:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 16:53:36] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 16:53:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 16:53:43] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 16:53:43] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 17:07:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:07:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:07:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:07:57] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 17:10:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:10:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:10:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:10:14] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 17:21:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:21:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:21:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 17:21:35] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 17:24:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:24:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:24:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:24:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:24:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:24:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 17:24:58] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 17:29:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:29:29] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:29:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 17:29:38] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 17:32:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:32:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:32:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 17:33:05] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:33:05] "GET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 17:34:41] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:34:41] "GET /uploads/Pitch-Example-Air-BnB-PDF_spider_graph.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.828294 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.951121 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.603819 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.512798 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [05/Aug/2024 17:54:15] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [05/Aug/2024 17:54:15] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 17:55:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 17:55:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 17:55:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.949808 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.803303 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [05/Aug/2024 17:55:23] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 18:20:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:20:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:20:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:20:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.883123 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.750343 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.860301 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.669306 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [05/Aug/2024 18:20:27] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [05/Aug/2024 18:20:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 18:21:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:21:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:21:03] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.906195 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.948675 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [05/Aug/2024 18:21:18] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 18:41:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:41:27] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:41:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 18:41:37] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:41:37] "GET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:42:32] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:42:32] "GET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:42:41] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:42:41] "GET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:42:47] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:42:47] "GET /uploads/LYLA-PITCH-DECK_v1.2_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:43:03] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 18:43:03] "GET /uploads/LYLA-PITCH-DECK_v1.4_spider_graph.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 18:44:36] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
