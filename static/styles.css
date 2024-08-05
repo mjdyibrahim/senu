@@ -54,7 +54,7 @@ nav {
 
 .main-content {
     flex: 1;
-    padding-bottom: 60px; /* Adjust according to footer height */
+    padding-bottom: 120px; /* Adjust according to footer height */
 }
 
 /* Hero Section */
@@ -108,32 +108,60 @@ nav {
     color: #fff;
 }
 
-/* General styling for the feedback container */
+.scores-container {
+    display: flex; /* Aligns items in a row */
+    flex-wrap: wrap; /* Allows wrapping of items to the next line if there's not enough space */
+    gap: 10px; /* Space between items */
+    margin: 0 auto; /* Centers the container horizontally */
+    max-width: 800px; /* Optional: Sets a max-width to prevent it from stretching too wide */
+    padding: 10px; /* Adds padding around the container */
+    text-align: center; /* Centers text within the container */
+}
+
+.scores-container h3 {
+    width: 100%; /* Ensures the heading takes the full width */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.score-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ddd; /* Optional: Adds a border around each score item */
+    border-radius: 5px; /* Optional: Rounds the corners of the border */
+    background-color: #f9f9f9; /* Optional: Adds a background color */
+}
+
+.score-name {
+    font-weight: bold; /* Makes the section name bold */
+    margin-right: 5px; /* Space between the name and the score */
+}
+
+.score-value {
+    color: #333; /* Color for the score value */
+}
+
+/* Existing CSS for feedback */
 .feedback-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
-    gap: 20px; /* Adjust space between boxes as needed */
-    margin-bottom: 60px; /* Add margin to prevent overlap with footer */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* Styling for each feedback box */
 .feedback-box {
-    background-color: #fff; /* Box background color */
-    border: 1px solid #ddd; /* Border color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 15px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+    flex: 1 1 calc(33.333% - 20px); /* Adjusts the width of feedback boxes to fit 3 per row, accounting for gaps */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-/* Styling for the feedback box headings */
 .feedback-box h4 {
-    background-color: #f5f5f5; /* Slightly darker background for heading */
+    background-color: #ddd; /* Slightly darker background for the heading */
     padding: 10px;
-    margin: -15px -15px 15px; /* Negative margin to adjust heading background */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
+    margin: -15px -15px 10px -15px; /* Adjust margins to fit the heading within the box */
+    border-radius: 5px 5px 0 0; /* Rounds only the top corners of the heading background */
 }
 
 /* Styling for the list items */

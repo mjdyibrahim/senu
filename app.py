@@ -114,18 +114,26 @@ def create_spider_graph(startup_name, scores):
     plt.close()
 
 def format_feedback_to_html(feedback_text):
-    # Split the text into individual items based on newlines or bullet points
-    items = feedback_text.split('\n')
+    # Split the text at the first newline separator
+    if '\n' in feedback_text:
+        feedback_text = feedback_text.split('\n', 1)[0]
     
-    # Create the HTML list
-    html_list = '<ul>'
-    for item in items:
-        # Ensure each item is not empty
-        if item.strip():
-            html_list += f'<li>{item.strip()}</li>'
-    html_list += '</ul>'
+    # Initialize the HTML list
+    html_list = f"""<div class="feedback_text_items">"""
+    
+    # Split the text into individual items based on "1.", "2.", "3.", "4.", and "5."
+    items = re.split(r'(\d+\.)\s*', feedback_text)
+    
+    # Ensure the items are properly formatted
+    for i in range(1, len(items), 2):
+        if items[i].strip():
+            html_list += f"""{items[i].strip()} {items[i + 1].strip()}<br />"""
+    
+    # Close the HTML list
+    html_list += '</div>'
     
     return html_list
+
 
 @app.route('/')
 def index():
@@ -178,10 +186,10 @@ def upload_file():
             # Return the results as HTML
             output_html = f"<p>Successfully processed the file for {email}.</p>"
             output_html += f"<div><img src='/uploads/{startup_name}_spider_graph.png' alt='Spider Graph' /></div>"
-            output_html += "<div><h3>Scores:</h3></div><div><ul>"
+            output_html += f"""<div class='scores-container'><h3>Scores:</h3>"""
             for section, score in scores.items():
-                output_html += f"<li>{section}: {score}</li>"
-            output_html += "</ul></div>"
+                output_html += f"<div class='score-item'><span class='score-name'>{section}</span>: <span class='score-value'>{score}</span></div>"
+            output_html += "</div>"
             output_html += f"""<div class="feedback-container">"""
 
             # Format and include feedback
