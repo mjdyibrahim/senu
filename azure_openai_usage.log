@@ -43,3 +43,573 @@ Using categorical units to plot a list of strings that are all parsable as float
 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [04/Aug/2024 16:03:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2024 16:03:45] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [04/Aug/2024 16:03:45] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [04/Aug/2024 16:03:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2024 16:03:49] "[33mGET /styles.css HTTP/1.1[0m" 404 -
+127.0.0.1 - - [04/Aug/2024 16:03:49] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [04/Aug/2024 16:04:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2024 16:04:42] "GET /static/scripts.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2024 16:04:42] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2024 16:06:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Aug/2024 16:06:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [04/Aug/2024 16:06:37] "GET /static/scripts.js HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 07:42:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 07:42:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 07:42:39] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 07:43:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 07:49:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 07:49:27] "GET /static/scripts.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 07:49:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 07:59:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 07:59:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 07:59:23] "GET /static/scripts.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:00:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:00:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:00:20] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:00:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:00:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:00:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 08:03:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:03:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:03:36] "GET /static/scripts.js HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:04:29] "POST /upload HTTP/1.1" 200 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:04:30] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 08:04:30] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:04:32] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:04:32] "[33mGET /static/uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:04:32] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [05/Aug/2024 08:04:32] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:04:33] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:04:33] "[33mGET /static/uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:04:33] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 08:10:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:10:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:10:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 08:11:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:11:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:11:54] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:11:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:12:47] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:12:47] "[33mGET /static/uploads/LYLA-PITCH-DECK_v1.4_spider_graph.png HTTP/1.1[0m" 404 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 08:17:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:17:57] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:17:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:18:07] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:18:07] "[33mGET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:18:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:20:41] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:20:41] "[33mGET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1[0m" 404 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:20:43] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:20:43] "[33mGET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1[0m" 404 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 08:25:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:25:59] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:25:59] "GET /static/scripts.js HTTP/1.1" 200 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:26:07] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:26:07] "[33mGET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:26:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:27:31] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:27:31] "[33mGET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:28:27] "[33mGET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:28:33] "[33mGET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:29:06] "[33mGET /LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:29:15] "[33mGET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:29:21] "[33mGET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Aug/2024 08:29:37] "[33mGET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1[0m" 404 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 08:33:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:33:51] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:33:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 08:34:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:34:39] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:34:39] "[33mGET /uploads/LYLA-PITCH-DECK-v0.2_spider_graph.png HTTP/1.1[0m" 404 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 08:52:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:52:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 08:52:13] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:52:20] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:52:20] "GET /uploads/LYLA-PITCH-DECK_v1.4_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:52:20] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:52:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:52:52] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:52:52] "GET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 08:53:47] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:53:47] "GET /uploads/LYLA-PITCH-DECK_v1.3_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:56:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:56:02] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 08:56:02] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:01:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:01:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:01:45] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:01:54] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:01:54] "GET /uploads/LYLA-PITCH-DECK_v1.4_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:02:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:04:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:04:08] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:04:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:04:17] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:04:17] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:04:17] "GET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:06:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:06:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:06:02] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:06:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:06:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:06:02] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:06:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:06:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:06:03] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:06:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:06:19] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:06:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:06:28] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:06:28] "GET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:07:18] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:07:18] "GET /uploads/LYLA-PITCH-DECK_v1.2_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:09:06] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:09:06] "GET /uploads/EduArts-Intro_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:10:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:18:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:18:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:18:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:19:21] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:19:21] "GET /uploads/Al-Basateen_loan_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:20:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:20:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:20:44] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:21:02] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:21:02] "GET /uploads/LYLA-PITCH-DECK_v1.3_spider_graph.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:23:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:23:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:23:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:23:46] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:23:46] "GET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:26:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:26:53] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:26:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:27:32] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:27:32] "GET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:30:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:32:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:32:58] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:32:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:38:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:38:47] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:38:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:38:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:38:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:38:48] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:38:56] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:38:56] "GET /uploads/LYLA-PITCH-DECK_v1.1_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:39:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:39:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:39:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:40:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:40:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 09:40:25] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:40:36] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:40:36] "GET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:40:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 09:52:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:52:11] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:52:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+127.0.0.1 - - [05/Aug/2024 09:52:18] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 09:52:18] "GET /uploads/LYLA-PITCH-DECK_v1.6_spider_graph.png HTTP/1.1" 200 -

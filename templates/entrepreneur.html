@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senu - Your Startup Companion</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <title>Dashboard - Senu</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -20,26 +20,21 @@
             </ul>
         </nav>
     </header>
-    <main class="main-content">
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Ready to Elevate Your Startup?</h2>
-            <p>Upload your pitch deck and receive personalized feedback to boost your business.</p>
-            <form id="pitchDeckForm" method="POST" enctype="multipart/form-data">
-                <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" required>
-                <input type="file" id="pitchDeck" name="pitchDeck" accept="application/pdf" required>
-                <button id="submitBtn" type="submit">Get Started</button>
-            </form>
+    <section class="dashboard">
+        <h2>Welcome to Your Dashboard</h2>
+        <div class="wizard">
+            <h3>Pitch Deck Analysis</h3>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar">0% Complete</div>
+            </div>
+            <div id="analysisSection" class="analysis-boxes">
+                <!-- AJAX content for page-by-page analysis will be inserted here -->
+            </div>
         </div>
     </section>
-    <section class="output">
-
-    </section>
-    
-    </main>
     <footer>
         <p>&copy; 2024 Senu. All rights reserved.</p>
     </footer>
-    <script src="static/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
