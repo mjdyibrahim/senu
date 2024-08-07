@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+    <title>Senu - Sign In</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar-brand">Senu</div>
+        <div class="navbar-nav">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('feedback') }}">Feedback</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('signin') }}">Sign In</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Sign In</h1>
+        <form action="{{ url_for('signin') }}" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</body>
+</html>
