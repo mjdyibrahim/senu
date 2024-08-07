@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 * latest cohere version conflicts with dspy, keep it at its current version
 
-# Step #2 Launching the app
+# Step #3 Launching the app
 
 The App is built with flask 
 
