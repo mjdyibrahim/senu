@@ -5,3 +5,5 @@ __pycache__/
 .ipynb_checkpoints/
 .jupyter/
 *.log
+azure_openai_usage.log
+openai_usage.log
