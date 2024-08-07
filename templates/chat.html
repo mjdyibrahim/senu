@@ -21,7 +21,7 @@
 
         .chat-header {
             padding: 15px;
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: #fff;
             text-align: center;
             border-radius: 8px 8px 0 0;
@@ -43,7 +43,7 @@
         }
 
         .message.user {
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: #fff;
             text-align: right;
             align-self: flex-end;
@@ -72,7 +72,7 @@
 
         .send-button {
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -80,7 +80,7 @@
         }
 
         .send-button:hover {
-            background-color: #0056b3;
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -129,11 +129,23 @@
                 // Clear the input
                 input.value = '';
 
-                // Simulate bot response
-                setTimeout(() => {
-                    const botMessage = generateBotResponse(message);
-                    appendMessage('bot', botMessage);
-                }, 1000); // Delay for bot response
+                // Send message to server
+                fetch('/chat/message', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: message })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Append bot's response
+                    appendMessage('bot', data.response);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    appendMessage('bot', 'Sorry, there was an error processing your message.');
+                });
             }
         }
 
@@ -147,11 +159,13 @@
             // Scroll to the bottom
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
-
-        function generateBotResponse(userMessage) {
-            // Simple bot logic (You can replace this with your actual logic)
-            return `Senu: I received your message: "${userMessage}"`;
-        }
+        // Event listener for Enter key
+        document.getElementById('chat-input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();  // Prevent default Enter key behavior
+                sendMessage();
+            }
+        });
     </script>
 </body>
 </html>

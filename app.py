@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, session, jsonify
 import os
 from werkzeug.utils import secure_filename
 import pymupdf
@@ -292,6 +292,48 @@ def signin():
 @app.route('/chat')
 def chat():
     return render_template('chat.html')
+
+@app.route('/chat/message', methods=['POST'])
+def chat_message():
+    data = request.get_json()
+    user_message = data.get('message')
+    
+    if not user_message:
+        return {"response": "No message provided."}, 400
+
+    # Initialize session conversation history if not present
+    if 'conversation_history' not in session:
+        session['conversation_history'] = []
+
+    # Append the user message to the conversation history
+    session['conversation_history'].append({'sender': 'user', 'message': user_message})
+
+    # Create context for the AI model
+    conversation_history = "\n".join(f"{entry['sender']}: {entry['message']}" for entry in session['conversation_history'])
+
+
+    try:
+        # Configure DSPy
+        falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+        dspy.configure(lm=falcon_lm)
+        
+        # Create a prompt for the AI
+        prompt = f"User: {user_message}\nAI:"
+        
+        # Generate a response using DSPy
+        response =  dspy.ChainOfThought("question, context -> answer", n=1)(question=prompt, context=conversation_history)
+        print(f"{response}")
+
+        ai_response = response.get('answer', '').strip()
+        
+        # Append the bot response to the conversation history
+        session['conversation_history'].append({'sender': 'bot', 'message': ai_response})
+
+        return {"response": ai_response}
+    
+    except Exception as e:
+        return {"response": f"An error occurred: {str(e)}"}, 500
+
 
 if __name__ == "__main__":
     app.run(debug=True)
