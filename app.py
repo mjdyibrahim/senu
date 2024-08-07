@@ -290,7 +290,7 @@ def signin():
     return render_template('signin.html')
 
 @app.route('/chat')
-def signin():
+def chat():
     return render_template('chat.html')
 
 if __name__ == "__main__":
