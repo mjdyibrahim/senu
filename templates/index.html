@@ -25,13 +25,49 @@
         <div class="hero-content">
             <h2>Ready to Elevate Your Startup?</h2>
             <p>Upload your pitch deck and receive personalized feedback to boost your business.</p>
-            <form id="pitchDeckForm" method="POST" enctype="multipart/form-data">
-                <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" required>
-                <input type="file" id="pitchDeck" name="pitchDeck" accept="application/pdf" required>
-                <button id="submitBtn" type="submit">Get Started</button>
-            </form>
+            <div class="step-container">
+                <div class="step">
+                    <div class="circle">1</div>
+                    <span class="label">Profile</span>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <div class="circle">2</div>
+                    <span class="label">Evaluate</span>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <div class="circle">3</div>
+                    <span class="label">RoadMap</span>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <div class="circle">4</div>
+                    <span class="label">Execute</span>
+                </div>
+            </div>
+            <div id="action-container">
+                <div id="form-container">
+                    <h3>Upload Pitch Deck -> Get instant score</h3>
+                    <form id="pitchDeckForm" method="POST" enctype="multipart/form-data">
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" required>
+                        <input type="file" id="pitchDeck" name="pitchDeck" accept="application/pdf" required>
+                        <button id="submitBtn" type="submit">Analyze my Pitch Deck</button>
+                    </form>
+                </div>
+                --- OR ---
+                <div id="chat-containter">
+                    <h3>Start Conversation</h3>
+                    <form id="chatForm" method="POST">
+                    <button id="chatBtn" type="submit">Start Chat</button>   
+
+                    </form>
+                </div>
+            </div>
         </div>
+
     </section>
+
     <section class="output">
 
     </section>

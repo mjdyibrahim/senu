@@ -85,8 +85,8 @@ def create_spider_graph(startup_name, scores):
     categories = list(scores.keys())
     values = list(scores.values())
 
-    # Trim any non numeric characters and convert values to floats for plotting
-    values = [float(re.sub(r'[^0-9.]', '', str(val))) for val in values]
+    # Convert values to floats for plotting
+    values = [float(val) for val in values]
     
     # Adding the first value to the end to close the circular graph
     values += values[:1]

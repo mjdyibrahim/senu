@@ -70,15 +70,11 @@ def process_pdf(filepath: str) -> str:
     text_data = replace_ligatures(text_data)
     return data_cleaning(text_data)
 
-# Function to evaluate sections using DSPy
-def evaluate_section(section_name, evaluation_class, content):
-    evaluate = dspy.Predict(evaluation_class, n=1)
-    response = evaluate(**{f"{section_name}_content": content})
-    score = getattr(response, f"{section_name}_score")
-    feedback = getattr(response, f"{section_name}_feedback")
+def evaluate_pitch_deck(content):
+    evaluate = dspy.Predict(EvaluatePitchDeck, n=1)
+    response = evaluate(pitchdeck_content=content)
+    return response.evaluation_results  # This would be a dict with scores and feedback
 
-
-    return score, feedback
 
 # Function to create spider graph
 def create_spider_graph(startup_name, scores):
@@ -120,26 +116,23 @@ def create_spider_graph(startup_name, scores):
     plt.savefig(os.path.join(app.config['UPLOAD_FOLDER'], f"{startup_name}_spider_graph.png"))
     plt.close()
 
-def format_feedback_to_html(feedback_text):
+# def format_feedback_to_html(feedback_items):
 
-    # Remove any occurrence of "\nUser:"
-    feedback_text = feedback_text.replace("\nUser:", "")
+#     # Remove any occurrence of "\nUser:"
+#     feedback_items = feedback_items.replace("\nUser:", "")
 
-    # Initialize the HTML list
-    html_list = """<ol class="feedback_text_items">"""
+#     # Initialize the HTML list
+#     html_list = """<ol class="feedback_text_items">"""
     
-    # Split the text into individual items based on the "-" separator
-    items = feedback_text.split('*')[1:]  # Skip the first empty item resulting from the split
+#     # Ensure the items are properly formatted
+#     for item in feedback_items:
+#         if item.strip():  # Avoid adding empty items
+#             html_list += f"""<li>{item.strip()}</li><br />"""
     
-    # Ensure the items are properly formatted
-    for item in items:
-        if item.strip():  # Avoid adding empty items
-            html_list += f"""<li>{item.strip()}</li><br />"""
+#     # Close the HTML list
+#     html_list += '</ol>'
     
-    # Close the HTML list
-    html_list += '</ol>'
-    
-    return html_list
+#     return html_list
 
 # def load_json_structure(json_filepath):
 #     """Load the startup.json structure."""
@@ -221,44 +214,37 @@ def upload_file():
             pitchdeck_text = process_pdf(file_path)
 
             # Configure DSPy
-            falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+            falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", max_tokens=1200, api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
             dspy.configure(lm=falcon_lm)
 
-            # Evaluate sections
-            sections = {
-                "team": EvaluateTeamSection,
-                "fundraising": EvaluateFundraisingSection,
-                "market": EvaluateMarketSection,
-                "business_model": EvaluateBusinessModelSection,
-                "product": EvaluateProductSection,
-                "traction": EvaluateTractionSection
-            }
+            # Evaluate the entire pitch deck
+            evaluation_results = evaluate_pitch_deck(pitchdeck_text)
 
-            scores = {}
-            feedback = {}
-            for section_name, evaluation_class in sections.items():
-                print(f"Evaluating section: {section_name}") # eval
-                score, feedback[section_name] = evaluate_section(section_name, evaluation_class, pitchdeck_text)
-                print(f"Score: {score}, Feedback: {feedback}") # eval 
-                scores[section_name.replace('_', ' ').title()] = score
+            print(f"""\n\n ----- START LLM OUTPUT ----- \n\n {evaluation_results} \n\n ----- END LLM OUTPUT ----- \n\n""")
+
+
+            # # Generate scores and feedback
+            # scores = {section.replace('_', ' ').title(): data['score'] for section, data in evaluation_results.items()}
+            # feedback = {section: data['feedback'] for section, data in evaluation_results.items()}
+
 
             # Generate spider graph
-            create_spider_graph(startup_name, scores)
+            # create_spider_graph(startup_name, scores)
 
             # Return the results as HTML
             output_html = f"<p>Successfully processed the file for {email}.</p>"
-            output_html += f"<div><img src='/uploads/{startup_name}_spider_graph.png' alt='Spider Graph' /></div>"
-            output_html += f"""<div class='scores-container'><h3>Scores:</h3>"""
-            for section, score in scores.items():
-                output_html += f"<div class='score-item'><span class='score-name'>{section}</span>: <span class='score-value'>{score}</span></div>"
-            output_html += "</div>"
-            output_html += f"""<div class="feedback-container">"""
+            # output_html += f"<div><img src='/uploads/{startup_name}_spider_graph.png' alt='Spider Graph' /></div>"
+            # output_html += f"""<div class='scores-container'><h3>Scores:</h3>"""
+            # for section, score in scores.items():
+            #     output_html += f"<div class='score-item'><span class='score-name'>{section}</span>: <span class='score-value'>{score}</span></div>"
+            # output_html += "</div>"
+            # output_html += f"""<div class="feedback-container">"""
 
-            # Format and include feedback
-            for section, section_feedback in feedback.items():
-                section_score = scores.get(section.replace('_', ' ').title(), 0)
-                formatted_feedback = format_feedback_to_html(section_feedback)
-                output_html += f"""<div class="feedback-box"><h4>{section.replace('_', ' ').title()} Feedback: ({section_score}/10)</h4>{formatted_feedback}</div>"""
+            # # Format and include feedback
+            # for section, feedback_items in feedback.items():
+            #     section_score = scores.get(section.replace('_', ' ').title(), 0)
+            #     formatted_feedback = format_feedback_to_html(feedback_items)
+            #     output_html += f"""<div class="feedback-box"><h4>{section.replace('_', ' ').title()} Feedback: ({section_score}/10)</h4>{formatted_feedback}</div>"""
 
             return output_html
 

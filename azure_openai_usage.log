@@ -1345,3 +1345,1427 @@ HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Ser
 127.0.0.1 - - [05/Aug/2024 22:14:45] "POST /upload HTTP/1.1" 200 -
 127.0.0.1 - - [05/Aug/2024 22:15:03] "POST /upload HTTP/1.1" 200 -
 127.0.0.1 - - [05/Aug/2024 22:15:03] "GET /uploads/LYLA-PITCH-DECK_v1.6_spider_graph.png HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 23:16:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:16:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 23:16:44] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:17:32] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:17:32] "GET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:17:33] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 23:29:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:29:37] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 23:29:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:30:16] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:30:16] "GET /uploads/LYLA-PITCH-DECK_v1.6_spider_graph.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 23:36:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:36:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 23:36:35] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:37:16] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:37:16] "GET /uploads/LYLA-PITCH-DECK_v1.3_spider_graph.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:40:42] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:40:42] "GET /uploads/LYLA-PITCH-DECK_v1.6_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:43:18] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:43:18] "GET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:44:23] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:44:23] "GET /uploads/LYLA-PITCH-DECK-v0.3_spider_graph.png HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [05/Aug/2024 23:48:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:48:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 23:48:38] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Aug/2024 23:48:46] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:48:46] "GET /uploads/LYLA-PITCH-DECK-v0.3_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:49:22] "POST /upload HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:50:05] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:50:05] "GET /uploads/LYLA-PITCH-DECK-v0.2_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:50:20] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:50:21] "GET /uploads/LYLA-PITCH-DECK-v0.1_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:50:21] "POST /upload HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:51:05] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:51:05] "GET /uploads/LYLA-PITCH-DECK_v1.5_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [05/Aug/2024 23:52:50] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:52:50] "GET /uploads/LYLA-PITCH-DECK_v1.2_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Aug/2024 23:52:50] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 00:07:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:07:30] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:07:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.849039 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.749083 seconds
+127.0.0.1 - - [06/Aug/2024 00:08:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 00:08:05] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 00:11:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:29] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:29] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:29] "[33mGET /static/static/falcon.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Aug/2024 00:11:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:30] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:57] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:57] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:57] "GET /static/falcon.png HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:11:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:11:58] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:12:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:12:28] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:12:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:12:28] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.820600 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.658307 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 00:12:53] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 00:14:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:14:56] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:14:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:14:56] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.843339 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.556589 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 00:15:32] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 00:20:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 00:20:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:20:03] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 00:20:03] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.933540 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.953433 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.851780 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.716416 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 00:20:19] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 00:20:20] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 10:49:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 10:49:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 10:49:01] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 10:49:05] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+Retrying request to /completions in 0.895719 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.525204 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 10:49:38] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 10:52:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 10:52:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 10:52:46] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 10:52:46] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.924872 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.849973 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 10:53:30] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 11:04:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:04:06] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 11:04:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 11:04:06] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:05:16] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:05:16] "GET /uploads/LYLA-PITCH-DECK_v1.6_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:45:02] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:45:08] "POST /upload HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:45:42] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:45:42] "GET /uploads/LYLA-PITCH-DECK_v1.3_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:45:43] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:45:58] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:46:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:46:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 11:46:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 11:46:21] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 11:46:31] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:46:31] "GET /uploads/LYLA-PITCH-DECK_v1.3_spider_graph.png HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:56:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:56:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 11:56:14] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 11:56:14] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:56:58] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 11:56:58] "GET /uploads/Carta-Pitch-Deck-Business-Insider-February-2019_spider_graph.png HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:58:21] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:58:24] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:58:59] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 11:59:00] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 11:59:51] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 11:59:57] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 11:59:57] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 12:00:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:00:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:00:00] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:00:00] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:00:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:00:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:00:01] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 12:03:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:03:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:03:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:03:28] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:03:35] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 12:23:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:23:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:23:18] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:23:18] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:28:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:28:55] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:28:55] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:28:56] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:28:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:28:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:28:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:28:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:28:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:28:59] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 12:29:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:29:27] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:29:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:29:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:29:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:29:29] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 12:31:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:31:10] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:31:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:31:10] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:31:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:31:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:31:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:31:26] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:31:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 12:34:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:34:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:34:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:34:10] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:35:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:35:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:35:55] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:35:55] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:35:55] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:32] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:32] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:32] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:32] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:36:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:37:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:37:35] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:37:35] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:37:35] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:37:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:37:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:37:53] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:37:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:37:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:37:54] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:27] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:27] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:39] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:39] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:40] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:40] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:41] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:41] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:43] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:43] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:44] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:44] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:45] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:45] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:47] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:48] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:48] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:49] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:51] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:51] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:52] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:52] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:53] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:53] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:55] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:55] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:56] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:56] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:56] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:56] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:58] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:38:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:38:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:00] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:00] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:01] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:01] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:02] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:02] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:04] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:05] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:08] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:08] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:09] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:09] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:11] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:12] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:12] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:19] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:19] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:20] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:20] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:21] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:39:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:39:25] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:51:09] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:51:09] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:09] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:51:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:51:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:51:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:51] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:51:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:51:53] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:52:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:56:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:56:40] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:56:40] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:56:40] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:56:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:56:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:56:41] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:56:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:56:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:56:48] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:57:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 12:57:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:57:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 12:57:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:00:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:00:45] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:00:45] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:00:45] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:01:02] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:01:02] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:02] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:01:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:03] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:01:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:06] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:01:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:07] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:01:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:03:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:03:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:03:12] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:08:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:08:04] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:08:04] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:08:04] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:08:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:08:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:08:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:08:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:08:40] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:08:40] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:08:40] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:09:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:09:28] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:09:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:09:28] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:09:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:09:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:09:29] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:37] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:10:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:10:38] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:14] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:14] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:14] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:14] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:16] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:33] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:33] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:11:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:11:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:12:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:12:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:12:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:12:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:12:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:12:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:12:21] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 13:12:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 13:12:28] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 13:28:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:28:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:28:43] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:28:43] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:28:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:28:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:28:44] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:28:56] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 13:29:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:29:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:29:29] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:29:30] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 13:55:48] "GET / HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 13:56:46] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 13:58:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 13:58:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:58:38] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 13:58:38] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 13:59:16] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Aug/2024 14:13:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:13:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:31] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:13:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:32] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:13:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:36] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:36] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:37] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:37] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:38] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:38] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:39] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:39] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:40] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:43] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:43] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:44] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:44] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:45] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:45] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:45] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:45] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:14:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:14:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 14:33:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:33:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:33:04] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:33:04] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:33:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:33:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:33:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 14:33:19] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 14:39:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:39:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:39:32] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:39:32] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:39:41] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 14:40:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:40:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:40:59] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:40:59] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 14:41:16] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 14:42:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:42:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:42:44] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:42:44] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:43:02] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 14:46:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:46:40] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:46:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:46:40] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:46:49] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\DSPyevaluate.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 14:55:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:55:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:55:25] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:55:25] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 14:55:45] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 14:59:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 14:59:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:59:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 14:59:28] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 14:59:52] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:00:43] "POST /upload HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 15:02:03] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:11:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:11:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:11:25] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:11:25] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:11:35] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:11:35] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:12:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:12:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:12:02] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:12:02] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:12:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:12:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:12:03] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 15:12:24] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:14:02] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:14:09] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 15:14:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:14:50] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 15:14:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+Retrying request to /completions in 0.950378 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 15:15:12] "POST /upload HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 15:16:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:45:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:45:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:45:48] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:45:48] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:45:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:47:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:47:48] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:47:48] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:47:48] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:47:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:47:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:47:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:48:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:49:02] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:49:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:49:49] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:49:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:49:49] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:49:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:49:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:49:50] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:51:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:55:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:55:57] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:55:57] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:55:57] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:57:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:57:47] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:57:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:57:47] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:57:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:57:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:57:48] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:57:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:57:57] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:57:57] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:57:57] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:58:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:58:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 17:58:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:58:50] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 17:59:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:01:38] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:01:38] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:38] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:01:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:39] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:01:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:40] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:01:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:40] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:01:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:41] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:01:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:43] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:01:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:03:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:03:44] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:03:44] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:03:44] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:03:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:03:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:03:45] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:04:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:04:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:04:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:04:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:04:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:04:37] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:08:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:14] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:14] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:08:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:16] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:08:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:22] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:08:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:08:23] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:18:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:18:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:18:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:18:05] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:18:28] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+127.0.0.1 - - [06/Aug/2024 18:29:28] "GET /signin HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:29:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:28] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:30] "GET /resources HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:29:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:30] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:31] "GET /feedback HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:29:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:32] "GET /entrepreneur HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:29:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:32] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:29:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:33] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:33] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:29:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:53] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:29:53] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:30:03] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 18:31:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Aug/2024 18:31:35] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:31:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:31:35] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [06/Aug/2024 18:31:43] "POST /upload HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [06/Aug/2024 18:32:19] "POST /upload HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [06/Aug/2024 18:33:27] "POST /upload HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.855235 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.642688 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 18:33:54] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.919519 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.803809 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 18:34:21] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.974917 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.708248 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [06/Aug/2024 18:34:35] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: GET https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/meta "HTTP/1.1 200 OK"
+HTTP Request: GET https://pypi.org/pypi/weaviate-client/json "HTTP/1.1 200 OK"
+HTTP Request: GET https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/schema/Senu "HTTP/1.1 200 OK"
+HTTP Request: POST https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/objects "HTTP/1.1 422 unknown"
+HTTP Request: POST https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/objects "HTTP/1.1 422 unknown"
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [07/Aug/2024 07:08:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 07:08:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 07:08:51] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 07:08:51] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 07:09:03] "POST /upload HTTP/1.1" 200 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+127.0.0.1 - - [07/Aug/2024 07:09:51] "POST /upload HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [07/Aug/2024 07:39:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 07:39:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 07:39:50] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 07:39:50] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.961437 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.835875 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [07/Aug/2024 07:40:09] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.879583 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.831983 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/objects "HTTP/1.1 422 unknown"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.960069 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.669748 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+HTTP Request: GET https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/meta "HTTP/1.1 200 OK"
+HTTP Request: GET https://pypi.org/pypi/weaviate-client/json "HTTP/1.1 200 OK"
+HTTP Request: GET https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/schema/Senu "HTTP/1.1 200 OK"
+HTTP Request: POST https://y5vqizj7rj2nmdpyrq2dmg.c0.europe-west3.gcp.weaviate.cloud/v1/objects "HTTP/1.1 422 unknown"
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.971026 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.578081 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [07/Aug/2024 07:51:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 07:51:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 07:51:07] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 07:51:07] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.882090 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 0.761518 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.820429 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [07/Aug/2024 07:51:22] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+Retrying request to /completions in 1.944665 seconds
+HTTP Request: POST https://api.ai71.ai/v1/completions "HTTP/1.1 500 Internal Server Error"
+127.0.0.1 - - [07/Aug/2024 07:51:25] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+ * Detected change in 'C:\\Users\\amagd\\projects\\falcon\\app-single.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-988-027
+127.0.0.1 - - [07/Aug/2024 13:50:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:50:48] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:50:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:50:48] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:50:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:52:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:52:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:52:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:54:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:05] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:05] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:05] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:06] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:57] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:56:59] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:57:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:57:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:57:00] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:58:20] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:58:20] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:20] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:58:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:58:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:58:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:58:22] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:13] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:13] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:13] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:14] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:14] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:15] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:16] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:46] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:46] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:46] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 13:59:47] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:01:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:01:21] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:01:21] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:01:21] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:01:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:02:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:02:31] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:02:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:02:31] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:02:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:02:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:02:42] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:03:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:03:09] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:03:09] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:03:09] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:03:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:03:49] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:03:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:03:49] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:03:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:03:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:03:50] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:04:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:04:26] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:04:26] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:04:26] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:04:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:04:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:04:27] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:05:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:05:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:05:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:05:25] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:05:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:05:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:05:29] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:09] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:09] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:09] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:09] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:10] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:11] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:06:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:06:24] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:07:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:07:34] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:07:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:07:34] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:07:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:07:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:07:34] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:07:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:13:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:13:49] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:13:49] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:13:49] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:13:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:13:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:13:50] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:14:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:15:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:15:31] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:15:31] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:15:31] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:16:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:01] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:01] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:16:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:01] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:16:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:02] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:16:36] "GET /static/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:16:36] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:36] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:40] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/Aug/2024 14:16:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Aug/2024 14:16:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:52] "[36mGET /static/scripts.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [07/Aug/2024 14:16:53] "[36mGET /static/falcon.png HTTP/1.1[0m" 304 -

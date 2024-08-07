@@ -109,14 +109,14 @@
       "dataFields": {
         "Current Amount Being Raised": "number",
         "Amount Raised So Far": "number",
-        "Sources of Funds": [
+        "Sources of Funds": {
           "Founders": "boolean",
           "Friends and Family": "boolean",
           "Crowdfunding": "boolean",
           "Accelerator": "boolean",
           "Angel Investor": "boolean",
           "VC": "boolean"
-        ],
+        },
         "Spending Allocation": {
           "Product": "boolean",
           "Marketing": "boolean",
