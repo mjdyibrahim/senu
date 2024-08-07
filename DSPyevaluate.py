@@ -2,7 +2,7 @@ import dspy
 
 class EvaluateTeamSection(dspy.Signature):
     """
-    Score the strength of the team section from 1-10 based on available information and provide feedback on possible improvements.
+    Analyze provided content and score the strength of the team section only from 1-10 based on available information and provide feedback on possible improvements.
 
     Optimal conditions for the team include:
     - 2-3 cofounders, with near equal equity
@@ -12,14 +12,24 @@ class EvaluateTeamSection(dspy.Signature):
     - Team working together for a significant period
     - Presence of mentors with substantial experience
 
+    Example of team_feedback output format:
+
+    "team_feedback": {
+    "feedback_1": "The team has strong experience and a clear vision, but they need more diversity in skills.",
+    "feedback_2": "The team's track record is impressive, but they lack experience in scaling businesses.",
+    "feedback_3": "There is a strong leadership team, but more emphasis on technical skills is needed.",
+    "feedback_4": "The team has a clear vision but needs better execution plans.",
+    "feedback_5": "The team should work on improving communication strategies within the group."
+}
+
     """
     team_content = dspy.InputField(desc="Content of the pitch deck.")
-    team_score = dspy.OutputField(desc="Score from 1-10 indicating the strength of the team section.")
-    team_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the startup to improve its team score. If any information is missing, recommend for it to be included, don't add '\nUser:' at the end.")
+    team_score: int = dspy.OutputField(desc="Score from 1-10 indicating the strength of the team section.")
+    team_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the startup to improve its team score. If any information is missing, recommend for it to be included.")
 
 class EvaluateFundraisingSection(dspy.Signature):
     """
-    Score the strength of the fundraising section from 1-10 based on available information and provide feedback on possible improvements.
+    Analyze provided content and score the strength of the fundraising section only from 1-10 based on available information and provide feedback on possible improvements.
     Optimal conditions for fundraising include:
     - A clear and feasible plan for raising funds in the next 12-18 months
     - Secured initial funding or demonstrated progress in fundraising
@@ -27,10 +37,21 @@ class EvaluateFundraisingSection(dspy.Signature):
     - Detailed and realistic financial projection
     - A strong pitch deck and business plan that have been refined and tested with investors
 
+    Example of fundraising_feedback output format:
+
+    "fundraising_feedback": {
+    "score": 7,
+    "feedback_1": "The startup has secured initial funding but needs to outline a clearer path for future rounds.",
+    "feedback_2": "Funding sources are diversified, but there is a need for more detailed financial projections.",
+    "feedback_3": "The pitch to investors is strong but needs better risk management strategies.",
+    "feedback_4": "Current funding is sufficient for initial growth but not for scaling.",
+    "feedback_5": "Consider exploring alternative funding options like grants or strategic partnerships."
+    }
+
     """
     fundraising_content = dspy.InputField(desc="Content of the pitch deck.")
-    fundraising_score = dspy.OutputField(desc="Score from 1-10 indicating the strength of the fundraising section.")
-    fundraising_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the startup to improve its fundraising score. If any information is missing, recommend for it to be included, don't add '\nUser:' at the end.")
+    fundraising_score: int = dspy.OutputField(desc="Score from 1-10 indicating the strength of the fundraising section.")
+    fundraising_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the startup to improve its fundraising score. If any information is missing, recommend for it to be included.")
 
 class EvaluateMarketSection(dspy.Signature):
     """
@@ -44,7 +65,7 @@ class EvaluateMarketSection(dspy.Signature):
 
     """
     market_content = dspy.InputField(desc="Content of the pitch deck.")
-    market_score = dspy.OutputField(desc="Score from 1-10 indicating the strength of the market section.")
+    market_score: int = dspy.OutputField(desc="Score from 1-10 indicating the strength of the market section.")
     market_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the startup to improve its market score. If any information is missing, recommend for it to be included, don't add '\nUser:' at the end.")
 
 class EvaluateBusinessModelSection(dspy.Signature):
@@ -59,7 +80,7 @@ class EvaluateBusinessModelSection(dspy.Signature):
 
     """
     business_model_content = dspy.InputField(desc="Content of the pitch deck.")
-    business_model_score = dspy.OutputField(desc="Score from 1-10 indicating the strength of the business model section.")
+    business_model_score: int = dspy.OutputField(desc="Score from 1-10 indicating the strength of the business model section.")
     business_model_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the startup to improve its business model score. If any information is missing, recommend for it to be included, don't add '\nUser:' at the end.")
 
 class EvaluateProductSection(dspy.Signature):
@@ -74,7 +95,7 @@ class EvaluateProductSection(dspy.Signature):
     
     """
     product_content = dspy.InputField(desc="Content of the pitch deck.")
-    product_score = dspy.OutputField(desc="Score from 1-10 indicating the strength of the product section.")
+    product_score: int = dspy.OutputField(desc="Score from 1-10 indicating the strength of the product section.")
     product_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the startup to improve its product score. If any information is missing, recommend for it to be included, don't add '\nUser:' at the end.")
 
 class EvaluateTractionSection(dspy.Signature):
@@ -90,7 +111,7 @@ class EvaluateTractionSection(dspy.Signature):
 
     """
     traction_content = dspy.InputField(desc="Content of the pitch deck.")
-    traction_score = dspy.OutputField(desc="Score from 1-10 indicating the strength of the traction section")
+    traction_score: int = dspy.OutputField(desc="Score from 1-10 indicating the strength of the traction section")
     traction_feedback: list[str] = dspy.OutputField(desc="list containing 5 items each must start with *, specifying feedback for the traction to improve its score. If any information is missing, recommend for it to be included, don't add '\nUser:' at the end.")
 
 class EvaluatePitchDeck(dspy.Signature):

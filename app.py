@@ -85,8 +85,8 @@ def create_spider_graph(startup_name, scores):
     categories = list(scores.keys())
     values = list(scores.values())
 
-    # Trim any non numeric characters and convert values to floats for plotting
-    values = [float(re.sub(r'[^0-9.]', '', str(val))) for val in values]
+    # Trim any non numeric characters and values to floats for plotting
+    values = [float(re.search(r'\d+(\.\d+)?', str(val)).group()) if re.search(r'\d+(\.\d+)?', str(val)) else 0 for val in values]
     
     # Adding the first value to the end to close the circular graph
     values += values[:1]
@@ -257,6 +257,7 @@ def upload_file():
             # Format and include feedback
             for section, section_feedback in feedback.items():
                 section_score = scores.get(section.replace('_', ' ').title(), 0)
+                print(f"{section_score}")
                 formatted_feedback = format_feedback_to_html(section_feedback)
                 output_html += f"""<div class="feedback-box"><h4>{section.replace('_', ' ').title()} Feedback: ({section_score}/10)</h4>{formatted_feedback}</div>"""
 
@@ -287,6 +288,10 @@ def resources():
 @app.route('/signin')
 def signin():
     return render_template('signin.html')
+
+@app.route('/chat')
+def signin():
+    return render_template('chat.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

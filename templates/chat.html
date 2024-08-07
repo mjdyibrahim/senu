@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Senu, AI Copilot</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Additional styling for chat interface */
+        .chat-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        .chat-header {
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 80%;
+        }
+
+        .message.user {
+            background-color: #007bff;
+            color: #fff;
+            text-align: right;
+            align-self: flex-end;
+        }
+
+        .message.bot {
+            background-color: #e9ecef;
+            color: #333;
+            text-align: left;
+            align-self: flex-start;
+        }
+
+        .chat-input-container {
+            padding: 10px;
+            display: flex;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .send-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Senu</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('entrepreneur') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="{{ url_for('feedback') }}"><i class="fas fa-chart-line"></i> Feedback</a></li>
+                <li><a href="{{ url_for('resources') }}"><i class="fas fa-book"></i> Resources</a></li>
+                <li><a href="{{ url_for('signin') }}"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="chat">
+        <div class="chat-container">
+            <div class="chat-header">
+                Chat with Senu, AI Copilot
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Type your message here...">
+                <button class="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Senu. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+
+            if (message) {
+                // Append user's message
+                appendMessage('user', message);
+                
+                // Clear the input
+                input.value = '';
+
+                // Simulate bot response
+                setTimeout(() => {
+                    const botMessage = generateBotResponse(message);
+                    appendMessage('bot', botMessage);
+                }, 1000); // Delay for bot response
+            }
+        }
+
+        function appendMessage(sender, message) {
+            const chatMessages = document.getElementById('chat-messages');
+            const messageElement = document.createElement('div');
+            messageElement.className = `message ${sender}`;
+            messageElement.textContent = message;
+            chatMessages.appendChild(messageElement);
+            
+            // Scroll to the bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function generateBotResponse(userMessage) {
+            // Simple bot logic (You can replace this with your actual logic)
+            return `Senu: I received your message: "${userMessage}"`;
+        }
+    </script>
+</body>
+</html>
