@@ -315,7 +315,7 @@ def chat_message():
 
     try:
 
-        system_prompt = f"""system_prompt: You are Senu. A Conversational AI Startup Copilot, you are in a chat window having a conversation with the user, 
+        system_prompt = f"""You are Senu. A Conversational AI Startup Copilot, you are in a chat window having a conversation with the user, 
                          your mission is to extract data from the user about their startup including their team, fundraising, market, business model, product and traction"""
         
         ai71_client = AI71(AI71_API_KEY)
@@ -325,7 +325,7 @@ def chat_message():
         messages = [
             {"role": "system", "content": f"{system_prompt}"},
         ] + [
-            {"role": "user" if entry['sender'] == 'user' else "bot", "content": entry['message']}
+            {"role": "user" if entry['sender'] == 'user' else "assistant", "content": entry['message']}
             for entry in session['conversation_history']
         ]
         # Simple invocation:
@@ -351,7 +351,7 @@ def chat_message():
         ai_response = response
         
         # Append the bot response to the conversation history
-        session['conversation_history'].append({'sender': 'bot', 'message': ai_response})
+        session['conversation_history'].append({'sender': 'assistant', 'message': ai_response})
 
         return {"response": ai_response}
     
