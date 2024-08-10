@@ -316,23 +316,27 @@ def chat_message():
     try:
 
         system_prompt = f"""system_prompt: You are Senu. A Conversational AI Startup Copilot, you are in a chat window having a conversation with the user, 
-                         your mission is to attract as much info as possible and answer their questions."""
+                         your mission is to extract data from the user about their startup including their team, fundraising, market, business model, product and traction"""
         
         ai71_client = AI71(AI71_API_KEY)
 
+
+        response =""
+        messages = [
+            {"role": "system", "content": f"{system_prompt}"},
+        ] + [
+            {"role": "user" if entry['sender'] == 'user' else "bot", "content": entry['message']}
+            for entry in session['conversation_history']
+        ]
         # Simple invocation:
         for chunk in ai71_client.chat.completions.create(
             model="tiiuae/falcon-180b-chat",
-            messages=[
-                {"role": "system", "content": f"{system_prompt}"},
-                {"role": "user", "content": f"{user_message}"}
-
-            ],
+            messages=messages,
             stream=True
         ):
             if chunk.choices[0].delta.content:
                 print(f"{chunk}")
-                response = chunk.choices[0].delta.content
+                response += chunk.choices[0].delta.content
         # # Configure DSPy
         # falcon_lm = dspy.Any(model="tiiuae/falcon-11b", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
         # dspy.configure(lm=falcon_lm)
