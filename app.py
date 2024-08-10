@@ -12,6 +12,7 @@ import dspy
 from DSPyevaluate import *
 import json
 from langchain.chains import LLMChain
+from ai71 import AI71 
 
 
 # Load environment variables
@@ -313,18 +314,37 @@ def chat_message():
 
 
     try:
-        # Configure DSPy
-        falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
-        dspy.configure(lm=falcon_lm)
+
+        system_prompt = f"""system_prompt: You are Senu. A Conversational AI Startup Copilot, you are in a chat window having a conversation with the user, 
+                         your mission is to attract as much info as possible and answer their questions."""
         
-        # Create a prompt for the AI
-        prompt = f"User: {user_message}\nAI:"
+        ai71_client = AI71(AI71_API_KEY)
+
+        # Simple invocation:
+        for chunk in ai71_client.chat.completions.create(
+            model="tiiuae/falcon-180b-chat",
+            messages=[
+                {"role": "system", "content": f"{system_prompt}"},
+                {"role": "user", "content": f"{user_message}"}
+
+            ],
+            stream=True
+        ):
+            if chunk.choices[0].delta.content:
+                print(f"{chunk}")
+                response = chunk.choices[0].delta.content
+        # # Configure DSPy
+        # falcon_lm = dspy.Any(model="tiiuae/falcon-11b", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+        # dspy.configure(lm=falcon_lm)
         
-        # Generate a response using DSPy
-        response =  dspy.ChainOfThought("question, context -> answer", n=1)(question=prompt, context=conversation_history)
+        # # Create a prompt for the AI
+        # prompt = f"User: {user_message}"
+        # conversation_history = system_prompt + prompt
+        # # Generate a response using DSPy
+        # response =  dspy.ChainOfThought("question, context -> answer", n=5)(question=prompt, context=conversation_history)
         print(f"{response}")
 
-        ai_response = response.get('answer', '').strip()
+        ai_response = response
         
         # Append the bot response to the conversation history
         session['conversation_history'].append({'sender': 'bot', 'message': ai_response})
