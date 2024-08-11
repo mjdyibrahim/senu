@@ -1,23 +1,12 @@
 # Senu: Startup Copilot
 
-NOTICE: This App is subjected to continous improvement and the main branch are not guranteed to work. Visit the live demo of the latest stable release at https://senu.abdomagdy.com
-
-This app makes use of AI71 API Hub to connect Falcon LLM and Cohere for Embedding and Semantic Search in addition to Weaviate for Vector Database, to get started you need to do the following:
-
-# Step 1: re-name .env-example to .env and add APIs from corresponding hubs
-
-AI71 API HUB: 
-https://marketplace.ai71.ai/
-
-AI71_API_KEY=""# Senu: Startup Copilot
-
 **NOTICE:** This app is subject to continuous improvement and the main branch is not guaranteed to be stable. For the latest stable release, visit the live demo at [Senu Live Demo](https://senu.abdomagdy.com).
 
 ## Note
 The latest content relevant to the Falcon Hackathon is placed inside the `falconhack` branch.
 
 ## How It Works
-This application extracts information from an uploaded pitch deck and uses semantic search and structured output with guardrails to process startup metrics functions, which are then reflected to the user to inform them of their current development status. Key components of the application include:
+This application extracts information from an uploaded pitch deck and uses semantic search and structured output with guardrails to process startup metrics functions, which are then reflected to the user to inform them of their current development status, their next milestones and a recommendation of actions and resources they should pursue to reach their goal. Key components of the application include:
 
 ### Startup Data
 - **Collection of Questions**: Validates startup information as a basis for reasonable evaluation and decision-making.
