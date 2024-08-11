@@ -1,4 +1,15 @@
 import dspy
+from dspy.functional import TypedPredictor
+from typing import List
+from pydantic import BaseModel
+
+#specify class for Feedback item
+class Feedback(BaseModel):
+    feedback_item: str
+
+class FeedbackItems(BaseModel):
+    feedback_items: List[Feedback]
+
 
 class EvaluateTeamSection(dspy.Signature):
     """

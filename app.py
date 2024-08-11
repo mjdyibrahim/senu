@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, session, jsonify
 import os
+import sys
 from werkzeug.utils import secure_filename
 import pymupdf
 import re
@@ -9,14 +10,34 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 import dspy
+from dspy.functional import TypedPredictor
+from typing import List
 from DSPyevaluate import *
+from StartupData import *
+import instructor
+from pydantic import BaseModel
 import json
-from langchain.chains import LLMChain
 from ai71 import AI71 
-
+# import phoenix as px
+# from phoenix.trace.openai import OpenAIInstrumentor
+import openai
 
 # Load environment variables
 load_dotenv()
+
+# # Set the encoding for windows
+# if os.name == 'nt':  # Check if the OS is Windows
+#     sys.stdout.reconfigure(encoding='utf-8')
+#     sys.stderr.reconfigure(encoding='utf-8')
+
+
+# sys.stdin.reconfigure(encoding='utf-8-sig') 
+# sys.stdout.reconfigure(encoding='utf-8-sig')
+
+# phoenix_session = px.launch_app()
+
+# Initialize OpenAI auto-instrumentation
+# OpenAIInstrumentor().instrument()
 
 # Access environment variables
 AI71_API_KEY = os.getenv("AI71_API_KEY")
@@ -126,11 +147,23 @@ def format_feedback_to_html(feedback_text):
     # Remove any occurrence of "\nUser:"
     feedback_text = feedback_text.replace("\nUser:", "")
 
+    # Find the position of "Falcon:" and truncate the text after it
+    falcon_index = feedback_text.find("Falcon:")
+    if falcon_index != -1:
+        feedback_text = feedback_text[:falcon_index].strip()  # Keep text before "Falcon:"
+    
+    # Define regex pattern to split on *, -, or digit. (1., 2., 3., etc.)
+    pattern = r'\s*\*\s*|\s*\d+\.\s*|(?<![\da-zA-Z])\s*-\s*(?![\da-zA-Z])|\n-\s*'
+
+    
+    # Split the text using the regex pattern
+    items = re.split(pattern, feedback_text)
+
     # Initialize the HTML list
     html_list = """<ol class="feedback_text_items">"""
     
     # Split the text into individual items based on the "-" separator
-    items = feedback_text.split('*')[1:]  # Skip the first empty item resulting from the split
+    # items = feedback_text.split('*')[1:]  # Skip the first empty item resulting from the split
     
     # Ensure the items are properly formatted
     for item in items:
@@ -314,20 +347,20 @@ def chat_message():
 
 
     try:
+        
+        ai71_client = AI71(AI71_API_KEY)
+        # openai_client = openai.OpenAI(api_key=AI71_API_KEY,base_url=AI71_BASE_URL)
 
         system_prompt = f"""You are Senu. A Conversational AI Startup Copilot, you are in a chat window having a conversation with the user, 
                          your mission is to extract data from the user about their startup including their team, fundraising, market, business model, product and traction"""
         
-        ai71_client = AI71(AI71_API_KEY)
-
-
-        response =""
+        response = ""
         messages = [
             {"role": "system", "content": f"{system_prompt}"},
         ] + [
-            {"role": "user" if entry['sender'] == 'user' else "assistant", "content": entry['message']}
-            for entry in session['conversation_history']
+            {"role": "user", "content": f"{user_message}"}
         ]
+
         # Simple invocation:
         for chunk in ai71_client.chat.completions.create(
             model="tiiuae/falcon-180b-chat",
@@ -336,6 +369,9 @@ def chat_message():
         ):
             if chunk.choices[0].delta.content:
                 print(f"{chunk}")
+                print(f"Request data: {data}")
+                print(f"Conversation history: {session['conversation_history']}")
+                print(f"Messages sent to API: {messages}")
                 response += chunk.choices[0].delta.content
         # # Configure DSPy
         # falcon_lm = dspy.Any(model="tiiuae/falcon-11b", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)

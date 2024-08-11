@@ -58,15 +58,24 @@ nav {
 }
 
 /* Hero Section */
+
 .hero {
     background: #4CAF50;
     color: #fff;
     padding: 50px 20px;
     text-align: center;
-    background-image:url("/static/falcon.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    height:650px;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden; /* Ensures that the image stays within the .hero container */
+}
+
+.hero img.hero-background {
+    position: absolute;
+    bottom: 0; /* Adjust this value to position the image vertically as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the image horizontally */
+    z-index: 100; /* Set a high z-index to make sure it appears above all other content */
+    pointer-events: none; /* Ensures the image doesn't interfere with other elements' interaction */
 }
 
 .hero h2 {

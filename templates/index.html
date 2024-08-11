@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senu - Your AI Startup Copilot</title>
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}" type="image/png">
+    <link rel="icon" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -22,6 +27,7 @@
     </header>
     <main class="main-content">
     <section class="hero">
+        <img src="/static/falcon.png" alt="Background Image" class="hero-background">
         <div class="hero-content">
             <h2>Ready to Elevate Your Startup?</h2>
             <p>Upload your pitch deck and receive personalized feedback to boost your business.</p>
