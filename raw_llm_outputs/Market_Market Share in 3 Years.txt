@@ -1,7 +1,0 @@
-Here is the generated data for the "Market" section:
-
-**Market**
-
-* **Market Share in 3 Years**: 12.5%
-
-This means that the startup is planning to acquire 12.5% of the market share in the next 3 years.
