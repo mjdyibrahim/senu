@@ -1,9 +1,9 @@
 # Senu: Startup Copilot
 
-**NOTICE:** This app is subject to continuous improvement and the main branch is not guaranteed to be stable. For the latest stable release, visit the live demo at [Senu Live Demo](https://senu.abdomagdy.com).
-
 ## Note
-The latest content relevant to the Falcon Hackathon is placed inside the `falconhack` branch.
+The latest content relevant to the Falcon Hackathon Submission is placed inside the `falconhack` branch.
+
+This app is subject to continuous improvement and the main branch is not guaranteed to be stable. For the latest stable release, visit the live demo at [Senu Live Demo](https://senu.abdomagdy.com).
 
 ## How It Works
 This application extracts information from an uploaded pitch deck and uses semantic search and structured output with guardrails to process startup metrics functions, which are then reflected to the user to inform them of their current development status, their next milestones and a recommendation of actions and resources they should pursue to reach their goal. Key components of the application include:

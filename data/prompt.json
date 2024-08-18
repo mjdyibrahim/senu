@@ -1,0 +1,126 @@
+{
+    "Info": {
+        "Startup Name": "Generate a unique and creative startup name.",
+        "Date Started": "Provide a realistic startup founding date in the format YYYY-MM-DD.",
+        "Registration Type": "What is the type of registration for this startup (e.g., LLC, Corporation, Sole Proprietorship)?",
+        "Registration Country": "In which country is this startup registered?",
+        "Contact Info": "Provide a realistic contact email for the startup."
+    },
+    "Team": {
+        "Number of Team Members": "How many team members does the startup have? (Provide a number between 1 and 10)",
+        "Team Members": [
+            {
+                "Name": "Generate a realistic name for a team member.",
+                "Title": "What is the title of this team member (e.g., CEO, CTO, COO)?",
+                "Availability Per Week": "How many hours per week is this team member available? (Provide a number between 0 and 40)",
+                "Involved Since": "When did this team member join the startup? Provide a date in the format YYYY-MM-DD.",
+                "Equity %": "What percentage of equity does this team member hold? (Provide a percentage)",
+                "Salary %": "What percentage of the startup's budget is allocated as this team member's salary? (Provide a percentage)",
+                "Years of Experience": "How many years of professional experience does this team member have? (Provide a number)",
+                "Academic Degree": {
+                    "Undergraduate": "Does the team member have an undergraduate degree? (Yes or No)",
+                    "Graduate Degree": "Does the team member have a graduate degree? (Yes or No)",
+                    "Masters": "Does the team member have a master's degree? (Yes or No)",
+                    "PhD or More": "Does the team member have a PhD or higher degree? (Yes or No)"
+                },
+                "Startup Experience": {
+                    "Has Been Part of a Startup Team": "Has this team member been part of a startup team before? (Yes or No)",
+                    "Has Been the Founder of a Startup": "Has this team member founded a startup before? (Yes or No)",
+                    "Has Previous C-Level Position": "Has this team member held a previous C-level position? (Yes or No)",
+                    "Has Been Part of a Successful Exit": "Has this team member been part of a successful exit? (Yes or No)"
+                },
+                "Role": "What is the primary role of this team member (e.g., Marketing, Sales, Product, Technical, Operations, Other)?"
+            }
+        ],
+        "Team Overview": "Provide an overview of the team's qualifications and expertise.",
+        "Team Assessment": "How would you assess the team's experience and ability to execute the business plan?"
+    },
+    "Fundraising": {
+        "Current Amount Being Raised": "How much funding is the startup currently raising? (Provide an amount in USD)",
+        "Amount Raised So Far": "How much funding has the startup raised so far? (Provide an amount in USD)",
+        "Sources of Funds": {
+            "Founders": "Are the funds from the founders? (Yes or No)",
+            "Friends and Family": "Are the funds from friends and family? (Yes or No)",
+            "Crowdfunding": "Are the funds from crowdfunding? (Yes or No)",
+            "Accelerator": "Are the funds from an accelerator? (Yes or No)",
+            "Angel Investor": "Are the funds from an angel investor? (Yes or No)",
+            "VC": "Are the funds from venture capital? (Yes or No)"
+        },
+        "Spending Allocation": {
+            "Product": "Will the funds be spent on product development? (Yes or No)",
+            "Marketing": "Will the funds be spent on marketing? (Yes or No)",
+            "Team": "Will the funds be spent on team expansion? (Yes or No)",
+            "Operations": "Will the funds be spent on operations? (Yes or No)"
+        },
+        "Received Patents": "Has the startup received any patents? (Yes or No)",
+        "Significant Achievements": "List any significant achievements the startup has accomplished.",
+        "Pitch Deck Ready": "Is the startup's pitch deck ready? (Yes or No)"
+    },
+    "Market": {
+        "Consumer Payment": "What are consumers currently paying annually to resolve the problem this startup addresses? (Provide an amount in USD)",
+        "Market Size": "How big is the target market for this startup? (Provide an amount in USD or number of potential customers)",
+        "Market Share in 3 Years": "What market share is the startup planning to acquire in the next 3 years? (Provide a percentage)"
+    },
+    "Business Model": {
+        "Primary Industry": "What is the primary industry of this startup? (e.g., Technology, Healthcare, Education, Finance)",
+        "Charges": {
+            "Capital": "Is the startup charging for Capital (Real Estate or Cash)? (Yes or No)",
+            "Content": "Is the startup charging for Content? (Yes or No)",
+            "Data / Information": "Is the startup charging for Data / Information? (Yes or No)",
+            "Goods / Widgets (Resellers)": "Is the startup charging for Goods / Widgets as a reseller? (Yes or No)",
+            "Goods / Widgets (Producers)": "Is the startup charging for Goods / Widgets as a producer? (Yes or No)",
+            "Hard Science": "Is the startup charging for Hard Science (e.g., Biotech, Pharma, AI)? (Yes or No)",
+            "Network or Community": "Is the startup charging for a Network or Community? (Yes or No)",
+            "Non-Physical Direct to Consumer": "Is the startup charging for Non-Physical Direct to Consumer (e.g., in-app purchases, Freemium)? (Yes or No)",
+            "Physical Direct to Consumer": "Is the startup charging for Physical Direct to Consumer (e.g., monthly deliveries)? (Yes or No)",
+            "Services": "Is the startup charging for Services (e.g., healthcare, professional services)? (Yes or No)",
+            "Technology / Platform": "Is the startup charging for Technology or Platform access? (Yes or No)",
+            "Other": "What other charges is the startup applying?"
+        },
+        "Revenue Model": {
+            "Advertising": "Is the startup's revenue model based on Advertising? (Yes or No)",
+            "Pay Per Unit": "Is the startup's revenue model based on Pay Per Unit? (Yes or No)",
+            "Pay Per Project": "Is the startup's revenue model based on Pay Per Project? (Yes or No)",
+            "Brokerage or Marketplace": {
+                "Consumer to Consumer": "Is the startup's marketplace model Consumer to Consumer (e.g., Airbnb)? (Yes or No)",
+                "Enterprise to Enterprise": "Is the startup's marketplace model Enterprise to Enterprise (e.g., New York Stock Exchange)? (Yes or No)",
+                "Enterprise to Consumer": "Is the startup's marketplace model Enterprise to Consumer (e.g., Amazon)? (Yes or No)"
+            },
+            "Recurring": "Is the startup's revenue model Recurring (e.g., Rental, Subscription)? (Yes or No)",
+            "Other": "What other revenue model is the startup using?"
+        },
+        "Customer Acquisition Method": {
+            "Online Advertising": "Is the startup using Online Advertising to acquire customers? (Yes or No)",
+            "Strategic Partnership": "Is the startup using Strategic Partnerships to acquire customers? (Yes or No)",
+            "Affiliate Marketing": "Is the startup using Affiliate Marketing to acquire customers? (Yes or No)",
+            "Conferences & Exhibitions": "Is the startup using Conferences & Exhibitions to acquire customers? (Yes or No)",
+            "Virtual / Word of Mouth": "Is the startup using Virtual channels or Word of Mouth to acquire customers? (Yes or No)"
+        },
+        "Customer Acquisition Cost": {
+            "10": "Is the customer acquisition cost 10% of sale value? (Yes or No)",
+            "20": "Is the customer acquisition cost 20% of sale value? (Yes or No)",
+            "30": "Is the customer acquisition cost 30% of sale value? (Yes or No)"
+        },
+        "User Base": {
+            "Everyone": "Is the startup's user base Everyone? (Yes or No)",
+            "Niche": "Is the startup's user base Niche? (Yes or No)"
+        }
+    },
+    "Product": {
+        "Product Stage": {
+            "Idea": "Is the product at the Idea stage? (Yes or No)",
+            "Prototype": "Is the product at the Prototype stage? (Yes or No)",
+            "Beta": "Is the product at the Beta stage? (Yes or No)",
+            "Live": "Is the product at the Live stage? (Yes or No)"
+        },
+        "Prospective Customers Interviewed": "How many prospective customers has the startup interviewed in the past 3 months? (Provide a number)",
+        "Percentage of Purchase Intent": "What percentage of these prospects said they would purchase the product or service? (Provide a percentage)"
+    },
+    "Traction": {
+        "Sales and Revenues Started": "Has the startup already started making sales and generating revenues? (Yes or No)",
+        "Revenue Past 12 Months": "How much revenue has the startup realized over the past twelve months? (Provide an amount in USD)",
+        "Product Users": "How many users are actively using the startup's product? (Provide a number)",
+        "Revenue Next 12 Months": "What is the expected revenue for the next 12 months? (Provide an amount in USD)",
+        "Product Users Growth in Next 12 Months": "How much is the user base expected to grow in the next 12 months? (Provide a percentage)"
+    }
+}

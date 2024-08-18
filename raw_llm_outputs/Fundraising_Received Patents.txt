@@ -1,0 +1,16 @@
+Here is some synthetic data for the "Fundraising" section with the field "Received Patents":
+
+| Startup Name | Received Patents |
+| --- | --- |
+| NovaTech | Yes |
+| GreenCycle | No |
+| MedSpark | Yes |
+| Finverge | No |
+| AeroLab | Yes |
+| EduPro | No |
+| HealthWise | Yes |
+| RoboMind | No |
+| EcoPulse | Yes |
+| CodeFusion | No |
+
+Let me know if you'd like me to generate more data or if you have any specific requirements (e.g. number of rows, specific distribution of Yes/No values, etc.)!

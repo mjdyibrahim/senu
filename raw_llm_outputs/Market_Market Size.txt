@@ -1,0 +1,13 @@
+Here is some synthetic data for the "Market" section:
+
+**Market Size:** $1.2 billion
+
+This represents the estimated total addressable market size for our startup's product or service. This number is based on industry research and analysis of the target customer base, and is intended to provide a rough estimate of the potential revenue opportunity for our business.
+
+Here's a breakdown of how this number was calculated:
+
+* Total addressable market (TAM): $1.5 billion (based on industry reports and research)
+* Serviceable available market (SAM): $900 million (based on our startup's specific target customer segment)
+* Serviceable obtainable market (SOM): $1.2 billion (based on our startup's current resources and capabilities)
+
+Note that these numbers are fictional and for demonstration purposes only. In a real-world scenario, you would want to conduct thorough market research and analysis to determine a more accurate estimate of your market size.

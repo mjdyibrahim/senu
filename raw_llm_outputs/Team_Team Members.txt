@@ -1,0 +1,103 @@
+Here is the generated data for the Team section:
+
+**Team Members**
+
+1. 
+   **Name**: Emily Chen
+   **Title**: Chief Technology Officer
+   **Availability Per Week**: 40 hours
+   **Involved Since**: 2020-01-01
+   **Equity %**: 10%
+   **Salary %**: 15%
+   **Years of Experience**: 8
+   **Academic Degree**:
+      - **Undergraduate**: Yes
+      - **Graduate Degree**: Yes
+      - **Masters**: Yes
+      - **PhD or More**: No
+   **Startup Experience**:
+      - **Has Been Part of a Startup Team**: Yes
+      - **Has Been the Founder of a Startup**: No
+      - **Has Previous C-Level Position**: Yes
+      - **Has Been Part of a Successful Exit**: Yes
+   **Role**: Technical
+
+2. 
+   **Name**: Liam Reed
+   **Title**: Marketing Manager
+   **Availability Per Week**: 35 hours
+   **Involved Since**: 2021-06-01
+   **Equity %**: 2%
+   **Salary %**: 8%
+   **Years of Experience**: 5
+   **Academic Degree**:
+      - **Undergraduate**: Yes
+      - **Graduate Degree**: No
+      - **Masters**: No
+      - **PhD or More**: No
+   **Startup Experience**:
+      - **Has Been Part of a Startup Team**: Yes
+      - **Has Been the Founder of a Startup**: No
+      - **Has Previous C-Level Position**: No
+      - **Has Been Part of a Successful Exit**: No
+   **Role**: Marketing
+
+3. 
+   **Name**: Ethan Patel
+   **Title**: Product Manager
+   **Availability Per Week**: 38 hours
+   **Involved Since**: 2020-03-01
+   **Equity %**: 5%
+   **Salary %**: 12%
+   **Years of Experience**: 7
+   **Academic Degree**:
+      - **Undergraduate**: Yes
+      - **Graduate Degree**: Yes
+      - **Masters**: Yes
+      - **PhD or More**: No
+   **Startup Experience**:
+      - **Has Been Part of a Startup Team**: Yes
+      - **Has Been the Founder of a Startup**: No
+      - **Has Previous C-Level Position**: No
+      - **Has Been Part of a Successful Exit**: Yes
+   **Role**: Product
+
+4. 
+   **Name**: Ava Lee
+   **Title**: Sales Director
+   **Availability Per Week**: 42 hours
+   **Involved Since**: 2019-09-01
+   **Equity %**: 8%
+   **Salary %**: 18%
+   **Years of Experience**: 10
+   **Academic Degree**:
+      - **Undergraduate**: Yes
+      - **Graduate Degree**: Yes
+      - **Masters**: Yes
+      - **PhD or More**: No
+   **Startup Experience**:
+      - **Has Been Part of a Startup Team**: Yes
+      - **Has Been the Founder of a Startup**: No
+      - **Has Previous C-Level Position**: Yes
+      - **Has Been Part of a Successful Exit**: Yes
+   **Role**: Sales
+
+5. 
+   **Name**: Jackson Kim
+   **Title**: Chief Financial Officer
+   **Availability Per Week**: 40 hours
+   **Involved Since**: 2020-01-01
+   **Equity %**: 12%
+   **Salary %**: 20%
+   **Years of Experience**: 12
+   **Academic Degree**:
+      - **Undergraduate**: Yes
+      - **Graduate Degree**: Yes
+      - **Masters**: Yes
+      - **PhD or More**: No
+   **Startup Experience**:
+      - **Has Been Part of a Startup Team**: Yes
+      - **Has Been the Founder of a Startup**: No
+      - **Has Previous C-Level Position**: Yes
+      - **Has Been Part of a Successful Exit**: Yes
+   **Role**: Finance

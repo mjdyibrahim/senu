@@ -1,10 +1,11 @@
-.env
-venv/
-uploads/*
 __pycache__/
 .ipynb_checkpoints/
 .jupyter/
+.vscode
+uploads/*
+venv/
+.env
 *.log
+assertion.log
 azure_openai_usage.log
 openai_usage.log
-assertion.log

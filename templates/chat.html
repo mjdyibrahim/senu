@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Additional styling for chat interface */
-        .chat-container {
-            max-width: 600px;
-            margin: 20px auto;
+        .chatbox-container {
+            width: 600px;
+            height: 852px;
+            position: fixed;
+            bottom:20px;
+            right:20px;
+            z-index: 1000;
+            cursor: move;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
-            height: 80vh;
         }
 
         .chat-header {
@@ -25,6 +29,7 @@
             color: #fff;
             text-align: center;
             border-radius: 8px 8px 0 0;
+            cursor: move;
         }
 
         .chat-messages {
@@ -99,8 +104,8 @@
     </header>
     
     <section class="chat">
-        <div class="chat-container">
-            <div class="chat-header">
+        <div class="chatbox-container" id="chatbox">
+            <div class="chat-header" id="chat-header">
                 Chat with Senu, AI Copilot
             </div>
             <div class="chat-messages" id="chat-messages">
@@ -159,6 +164,7 @@
             // Scroll to the bottom
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
+
         // Event listener for Enter key
         document.getElementById('chat-input').addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
@@ -166,6 +172,44 @@
                 sendMessage();
             }
         });
+
+        // Drag and Drop logic
+        const chatbox = document.getElementById('chatbox');
+        const header = document.getElementById('chat-header');
+        let offsetX, offsetY;
+
+        header.addEventListener('mousedown', startDrag);
+
+        function startDrag(e) {
+            offsetX = e.clientX - chatbox.getBoundingClientRect().left;
+            offsetY = e.clientY - chatbox.getBoundingClientRect().top;
+            document.addEventListener('mousemove', drag);
+            document.addEventListener('mouseup', stopDrag);
+        }
+
+        function drag(e) {
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+            const chatboxRect = chatbox.getBoundingClientRect();
+
+            let left = e.clientX - offsetX;
+            let top = e.clientY - offsetY;
+
+            // Constrain movement within the viewport
+            if (left < 0) left = 0;
+            if (top < 0) top = 0;
+            if (left + chatboxRect.width > viewportWidth) left = viewportWidth - chatboxRect.width;
+            if (top + chatboxRect.height > viewportHeight) top = viewportHeight - chatboxRect.height;
+
+            chatbox.style.left = `${left}px`;
+            chatbox.style.top = `${top}px`;
+        }
+
+        function stopDrag() {
+            document.removeEventListener('mousemove', drag);
+            document.removeEventListener('mouseup', stopDrag);
+        }
+
     </script>
 </body>
 </html>
