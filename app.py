@@ -71,7 +71,7 @@ app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 #         logger.addHandler(logging.NullHandler())
 
 # Allowed file extensions
-ALLOWED_EXTENSIONS = {"pdf"}
+ALLOWED_EXTENSIONS = {"pdf", "txt"}
 
 
 # Function to check allowed file extensions
@@ -296,12 +296,17 @@ def upload_file():
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         startup_name = os.path.splitext(filename)[0]
+        file_extension = os.path.splitext(filename)[1].lower()
         file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
         file.save(file_path)
 
         try:
-            # Process the uploaded PDF
-            pitchdeck_text = process_pdf(file_path)
+            # Process the uploaded file
+            if file_extension == ".pdf":
+                pitchdeck_text = process_pdf(file_path)
+            elif file_extension == ".txt":
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    pitchdeck_text = f.read()
 
             # Configure DSPy
             falcon_lm = dspy.OpenAI(
@@ -355,7 +360,7 @@ def upload_file():
         except FileNotFoundError as e:
             return f"<p class='error'>{str(e)}</p>", 500
 
-    return "<p class='error'>Invalid file type. Only PDF files are allowed.</p>", 400
+    return "<p class='error'>Invalid file type. Only PDF and TXT files are allowed.</p>", 400
 
 
 @app.route("/uploads/<filename>")
