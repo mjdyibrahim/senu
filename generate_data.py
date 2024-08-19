@@ -3,8 +3,9 @@ import json
 import os
 import datetime
 import logging
-import phoenix as px
-from phoenix.trace.langchain import LangChainInstrumentor
+import dspy
+from aimlapi import AIMLAPI
+from openinference.instrumentation.dspy import DSPyInstrumentor
 from dotenv import load_dotenv
 from opentelemetry import trace as trace_api
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
@@ -14,19 +15,13 @@ from opentelemetry.sdk.trace.export import SimpleSpanProcessor
 load_dotenv()
 
 # Initialize Langchain auto-instrumentation
-LangChainInstrumentor().instrument()
+DSPyInstrumentor().instrument()
 
 tracer_provider = trace_sdk.TracerProvider()
 span_exporter = OTLPSpanExporter("http://localhost:6006/v1/traces")
 span_processor = SimpleSpanProcessor(span_exporter)
 tracer_provider.add_span_processor(span_processor)
 trace_api.set_tracer_provider(tracer_provider)
-
-# You can export a dataframe from the session
-df = px.Client().get_spans_dataframe()
-
-# Note that you can apply a filter if you would like to export only a sub-set of spans
-df = px.Client().get_spans_dataframe('span_kind == "RETRIEVER"')
 
 # Set up logging
 LOG_FILE = 'api_calls.log'
@@ -37,12 +32,26 @@ logging.basicConfig(
 )
 
 
-
 # Set your API key and endpoint
 AIML_API_KEY = os.getenv("AIML_API_KEY")
 ENDPOINT_URL = 'https://api.aimlapi.com/chat/completions'
 
 model = "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+
+
+# # Configure DSPy
+# llama_lm = AIMLAPI(
+#     model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+#     api_base=ENDPOINT_URL,
+#     api_key=AIML_API_KEY,
+# )
+
+# dspy.configure(lm=llama_lm)
+
+# prompt = "How is the weather today?"
+
+# response = dspy.Predict("question -> answer") (question=prompt, lm=llama_lm).answer
+# print(response)
 
 # Headers for API request
 headers = {
@@ -461,7 +470,7 @@ def generate_data(section, fields, system_message):
 
 def save_startup_data_to_file(startup_id, generated_data):
     # Directory to save the startup data
-    output_dir = 'generated_datasets'
+    output_dir = 'data/generated_datasets'
     os.makedirs(output_dir, exist_ok=True)
     
     # File name based on the startup ID (e.g., 00001.txt)
