@@ -62,7 +62,6 @@ app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 
 # nlp = spacy.load('en_core_web_sm')
 
-# phoenix_session = px.launch_app()
 
 # for name, logger in logging.root.manager.loggerDict.items():
 #     if name.startswith("phoenix.") and isinstance(logger, logging.Logger):
@@ -124,6 +123,39 @@ def process_pdf(filepath: str) -> str:
         text_data += remove_footnotes(data)
     text_data = replace_ligatures(text_data)
     return data_cleaning(text_data)
+
+
+def extract_data_points(text, llm_model="tiiuae/falcon-180b-chat"):
+    """
+    Extracts data points from user input using LLM
+
+    Args:
+        text (str): User input text
+        llm_model (str, optional): Name of the LLM model to use. Defaults to "tiiuae/falcon-180b-chat".
+
+    Returns:
+        dict: Dictionary containing extracted data points with keys as labels and values as extracted data.
+    """
+    # Configure DSPy (if needed)
+    falcon_lm = dspy.OpenAI(model=llm_model, api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+    dspy.configure(lm=falcon_lm)
+
+    # Define prompts for extracting specific data points (e.g., team size, market size)
+    prompts = {
+        "team_size": "What is the size of the founding team based on the provided text?",
+        "market_size": "What is the estimated size of the target market based on the text?",
+        # Add more prompts for other data points you want to extract
+    }
+
+    extracted_data = {}
+    for label, prompt in prompts.items():
+    # Call LLM to extract data based on the prompt
+        response = dspy.ChainOfThought("question, context -> answer", n=1)(
+        question=prompt, context=text
+    )
+    extracted_data[label] = response
+
+    return extracted_data
 
 
 # Function to evaluate sections using DSPy
