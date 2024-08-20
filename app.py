@@ -111,7 +111,31 @@ def data_cleaning(text: str) -> str:
     return text.lower()
 
 
-def process_pdf(filepath: str) -> str:
+def extract_data_points(text: str) -> dict:
+    """Function to extract data points from text according to schema.sql"""
+    data_points = {
+        "users": {
+            "username": extract_username(text),
+            "email": extract_email(text),
+            "password_hash": extract_password_hash(text),
+        },
+        "startups": {
+            "name": extract_startup_name(text),
+            "tagline": extract_tagline(text),
+            "description": extract_description(text),
+            "date_started": extract_date_started(text),
+            "registration_type": extract_registration_type(text),
+            "registration_country": extract_registration_country(text),
+            "email": extract_startup_email(text),
+            "phone": extract_phone(text),
+            "address": extract_address(text),
+            "owner": extract_owner(text),
+        },
+        # Add other tables and their respective fields here
+    }
+    return data_points
+
+def process_pdf(filepath: str) -> dict:
     """Function for processing individual PDFs"""
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"File not found: {filepath}")
@@ -122,7 +146,8 @@ def process_pdf(filepath: str) -> str:
         data = page.get_text()
         text_data += remove_footnotes(data)
     text_data = replace_ligatures(text_data)
-    return data_cleaning(text_data)
+    cleaned_text = data_cleaning(text_data)
+    return extract_data_points(cleaned_text)
 
 
 def extract_data_points(text, llm_model="tiiuae/falcon-180b-chat"):
