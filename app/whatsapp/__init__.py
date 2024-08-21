@@ -1,0 +1,1 @@
+from .whatsapp import send_message, receive_message  # or whatever main functions you have in whatsapp.py
