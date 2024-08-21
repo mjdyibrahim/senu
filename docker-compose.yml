@@ -1,12 +1,16 @@
 # docker-compose.yml
 services:
-  python-app:
+  app:
     build: . 
     command: ["python", "app.py"] 
     ports:
       - "8000:8000" 
     volumes:
-      - .:/app 
+      - .:/app
+    environment:
+      - APP_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/senu
+    depends_on:
+      - db
   phoenix:
     image: arizephoenix/phoenix:latest # Must be greater than 4.0 version to work
     depends_on:
@@ -28,6 +32,7 @@ services:
       - 5432
     volumes:
       - database_data:/var/lib/postgresql/data
+
 volumes:
   database_data:
     driver: local

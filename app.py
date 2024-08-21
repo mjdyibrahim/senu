@@ -2,10 +2,14 @@ import os
 
 # import sys
 import re
-from flask import Flask, render_template, request, send_from_directory, session
-
-# from flask import flash, redirect, url_for, jsonify
+from fastapi import FastAPI, Depends, Request, Form, UploadFile, File, HTTPException
+from fastapi.responses import HTMLResponse, FileResponse
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
+from sqlalchemy.orm import Session
+from database import get_db
 from werkzeug.utils import secure_filename
+import openai
 import pymupdf
 import numpy as np
 import matplotlib
@@ -18,18 +22,14 @@ import dspy
 # from dspy.functional import TypedPredictor
 # import spacy
 # from typing import List, Dict, Any
-# import instructor
 # from pydantic import BaseModel
 # import json
-from ai71 import AI71
 
 # import phoenix as px
 from openinference.instrumentation.dspy import DSPyInstrumentor
 
-# import openai
-# import logging
 from DSPyevaluate import *
-
+from DSPycomplete import TeamSectionExtractor
 
 from opentelemetry import trace as trace_api
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
@@ -48,16 +48,24 @@ DSPyInstrumentor().instrument()
 # Load environment variables
 load_dotenv()
 
-
-
 # Access environment variables
 AI71_API_KEY = os.getenv("AI71_API_KEY")
 AI71_BASE_URL = os.getenv("AI71_BASE_URL")
 
-# Flask App Configuration
-app = Flask(__name__)
+# FastAPI App Configuration
+app = FastAPI()
 
-app.config["UPLOAD_FOLDER"] = "uploads/"
+# Mount static files
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Set up Jinja2 templates
+templates = Jinja2Templates(directory="templates")
+
+UPLOAD_FOLDER = "uploads/"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+# Use UPLOAD_FOLDER directly in your code instead of app.config["UPLOAD_FOLDER"]
+
 app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 
 # nlp = spacy.load('en_core_web_sm')
@@ -111,31 +119,7 @@ def data_cleaning(text: str) -> str:
     return text.lower()
 
 
-def extract_data_points(text: str) -> dict:
-    """Function to extract data points from text according to schema.sql"""
-    data_points = {
-        "users": {
-            "username": extract_username(text),
-            "email": extract_email(text),
-            "password_hash": extract_password_hash(text),
-        },
-        "startups": {
-            "name": extract_startup_name(text),
-            "tagline": extract_tagline(text),
-            "description": extract_description(text),
-            "date_started": extract_date_started(text),
-            "registration_type": extract_registration_type(text),
-            "registration_country": extract_registration_country(text),
-            "email": extract_startup_email(text),
-            "phone": extract_phone(text),
-            "address": extract_address(text),
-            "owner": extract_owner(text),
-        },
-        # Add other tables and their respective fields here
-    }
-    return data_points
-
-def process_pdf(filepath: str) -> dict:
+def process_pdf(filepath: str) -> str:
     """Function for processing individual PDFs"""
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"File not found: {filepath}")
@@ -147,11 +131,13 @@ def process_pdf(filepath: str) -> dict:
         text_data += remove_footnotes(data)
     text_data = replace_ligatures(text_data)
     cleaned_text = data_cleaning(text_data)
-    return extract_data_points(cleaned_text)
+    data_points = extract_data_points(cleaned_text)
+    print(data_points)
+    return cleaned_text
 
 
-def extract_data_points(text, llm_model="tiiuae/falcon-180b-chat"):
-    """
+def extract_data_points(text: str, llm_model="tiiuae/falcon-180b-chat") -> dict:
+    """"
     Extracts data points from user input using LLM
 
     Args:
@@ -161,8 +147,28 @@ def extract_data_points(text, llm_model="tiiuae/falcon-180b-chat"):
     Returns:
         dict: Dictionary containing extracted data points with keys as labels and values as extracted data.
     """
+    # data_points = {
+    #     "users": {
+    #         "username": extract_username(text),
+    #         "email": extract_email(text),
+    #         "password_hash": extract_password_hash(text),
+    #     },
+    #     "startups": {
+    #         "name": extract_startup_name(text),
+    #         "tagline": extract_tagline(text),
+    #         "description": extract_description(text),
+    #         "date_started": extract_date_started(text),
+    #         "registration_type": extract_registration_type(text),
+    #         "registration_country": extract_registration_country(text),
+    #         "email": extract_startup_email(text),
+    #         "phone": extract_phone(text),
+    #         "address": extract_address(text),
+    #         "owner": extract_owner(text),
+    #     },
+    # }
+    
     # Configure DSPy (if needed)
-    falcon_lm = dspy.OpenAI(model=llm_model, api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+    falcon_lm = dspy.OpenAI(model=llm_model, base_url=AI71_BASE_URL, api_key=AI71_API_KEY)
     dspy.configure(lm=falcon_lm)
 
     # Define prompts for extracting specific data points (e.g., team size, market size)
@@ -172,15 +178,14 @@ def extract_data_points(text, llm_model="tiiuae/falcon-180b-chat"):
         # Add more prompts for other data points you want to extract
     }
 
-    extracted_data = {}
+    data_points = {}
     for label, prompt in prompts.items():
     # Call LLM to extract data based on the prompt
-        response = dspy.ChainOfThought("question, context -> answer", n=1)(
-        question=prompt, context=text
-    )
-    extracted_data[label] = response
+        response = dspy.ChainOfThought(signature=TeamSectionExtractor, n=1)(pitchdeck_content=text)
+    print(response)    
+    data_points[label] = response
 
-    return extracted_data
+    return data_points
 
 
 # Function to evaluate sections using DSPy
@@ -239,7 +244,7 @@ def create_spider_graph(startup_name, scores):
 
     # Save or display the plot
     plt.savefig(
-        os.path.join(app.config["UPLOAD_FOLDER"], f"{startup_name}_spider_graph.png")
+        os.path.join(UPLOAD_FOLDER, f"{startup_name}_spider_graph.png")
     )
     plt.close()
 
@@ -326,36 +331,33 @@ def format_feedback_to_html(feedback_text):
 #
 # def run_llm_completion(prompt):
 #     """Function to run LLM completion using LangChain with Falcon LLM."""
-#     falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+#     falcon_lm = dspy.OpenAI(model="tiiuae/falcon-180b-chat", base_url=AI71_BASE_URL, api_key=AI71_API_KEY)
 #     dspy.configure(lm=falcon_lm)
 #
 #     return questions
 
 
-@app.route("/")
-def index():
-    """Renders index.html for root visitors"""
-    return render_template("index.html")
+@app.get("/")
+async def index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
 
-@app.route("/upload", methods=["POST"])
-def upload_file():
+@app.post("/upload")
+async def upload_file(file: UploadFile = File(...), email: str = Form(...), db: Session = Depends(get_db)):
     """Processes actions for file upload"""
-    if "pitchDeck" not in request.files or "email" not in request.form:
-        return "<p class='error'>No file or email provided!</p>", 400
-
-    file = request.files["pitchDeck"]
-    email = request.form["email"]
+    if not file or not email:
+        return {"error": "No file or email provided!"}, 400
 
     if file.filename == "":
-        return "<p class='error'>No selected file!</p>", 400
+        return {"error": "No selected file!"}, 400
 
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         startup_name = os.path.splitext(filename)[0]
         file_extension = os.path.splitext(filename)[1].lower()
-        file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
-        file.save(file_path)
+        file_path = os.path.join(UPLOAD_FOLDER, filename)
+        with open(file_path, "wb") as f:
+            f.write(await file.read())
 
         try:
             # Process the uploaded file
@@ -368,7 +370,7 @@ def upload_file():
             # Configure DSPy
             falcon_lm = dspy.OpenAI(
                 model="tiiuae/falcon-180b-chat",
-                api_base=AI71_BASE_URL,
+                base_url=AI71_BASE_URL,
                 api_key=AI71_API_KEY,
             )
             dspy.configure(lm=falcon_lm)
@@ -415,72 +417,71 @@ def upload_file():
             return output_html
 
         except FileNotFoundError as e:
-            return f"<p class='error'>{str(e)}</p>", 500
+            return {"error": str(e)}, 500
 
-    return "<p class='error'>Invalid file type. Only PDF and TXT files are allowed.</p>", 400
+    return {"error": "Invalid file type. Only PDF and TXT files are allowed."}, 400
 
 
-@app.route("/uploads/<filename>")
-def uploaded_file(filename):
+@app.get("/uploads/{filename}")
+async def uploaded_file(filename: str):
     """Actions for file upload"""
-    return send_from_directory(app.config["UPLOAD_FOLDER"], filename)
+    return FileResponse(os.path.join(UPLOAD_FOLDER, filename))
 
 
-@app.route("/entrepreneur")
-def entrepreneur():
+@app.get("/entrepreneur")
+async def entrepreneur(request: Request):
     """Entrepreneur page"""
-    return render_template("entrepreneur.html")
+    return templates.TemplateResponse("entrepreneur.html", {"request": request})
 
 
-@app.route("/feedback")
-def feedback():
+@app.get("/feedback")
+async def feedback(request: Request):
     """Feedback Page"""
-    return render_template("feedback.html")
+    return templates.TemplateResponse("feedback.html", {"request": request})
 
 
-@app.route("/resources")
-def resources():
+@app.get("/resources")
+async def resources(request: Request):
     """Resources page"""
-    return render_template("resources.html")
+    return templates.TemplateResponse("resources.html", {"request": request})
 
 
-@app.route("/signin")
-def signin():
+@app.get("/signin")
+async def signin(request: Request):
     """Signin page"""
-    return render_template("signin.html")
+    return templates.TemplateResponse("signin.html", {"request": request})
 
 
-@app.route("/chat")
-def chat():
+@app.get("/chat")
+async def chat(request: Request):
     """Chat page"""
-    return render_template("chat.html")
+    return templates.TemplateResponse("chat.html", {"request": request})
 
 
-@app.route("/chat/message", methods=["POST"])
-def chat_message():
+@app.post("/chat/message")
+async def chat_message(request: Request, db: Session = Depends(get_db)):
     """Chat interaction"""
-    data = request.get_json()
+    data = await request.json()
     user_message = data.get("message")
 
     if not user_message:
         return {"response": "No message provided."}, 400
 
-    # Initialize session conversation history if not present
-    if "conversation_history" not in session:
-        session["conversation_history"] = []
+    # Initialize conversation history if not present
+    if not hasattr(request.state, "conversation_history"):
+        request.state.conversation_history = []
 
     # Append the user message to the conversation history
-    session["conversation_history"].append({"sender": "user", "message": user_message})
+    request.state.conversation_history.append({"sender": "user", "message": user_message})
 
     # Create context for the AI model
     conversation_history = "\n".join(
         f"{entry['sender']}: {entry['message']}"
-        for entry in session["conversation_history"]
+        for entry in request.state.conversation_history
     )
 
     try:
-        ai71_client = AI71(AI71_API_KEY)
-        # openai_client = openai.OpenAI(api_key=AI71_API_KEY,base_url=AI71_BASE_URL)
+        openai_client = openai.OpenAI(api_key=AI71_API_KEY,base_url=AI71_BASE_URL)
         system_prompt = """You are Senu. A Conversational AI Startup Copilot, you are in a chat window 
                             having a conversation with the user, your mission is to extract data from the user about their startup including 
                             their team, fundraising, market, business model, product and traction"""
@@ -490,17 +491,17 @@ def chat_message():
         ] + [{"role": "user", "content": f"{user_message}"}]
 
         # Simple invocation:
-        for chunk in ai71_client.chat.completions.create(
+        for chunk in openai_client.chat.completions.create(
             model="tiiuae/falcon-180b-chat", messages=messages, stream=True
         ):
             if chunk.choices[0].delta.content:
                 print(f"{chunk}")
                 print(f"Request data: {data}")
-                print(f"Conversation history: {session['conversation_history']}")
+                print(f"Conversation history: {request.state.conversation_history}")
                 print(f"Messages sent to API: {messages}")
                 response += chunk.choices[0].delta.content
         # # Configure DSPy
-        # falcon_lm = dspy.Any(model="tiiuae/falcon-11b", api_base=AI71_BASE_URL, api_key=AI71_API_KEY)
+        # falcon_lm = dspy.Any(model="tiiuae/falcon-11b", base_url=AI71_BASE_URL, api_key=AI71_API_KEY)
         # dspy.configure(lm=falcon_lm)
 
         # # Create a prompt for the AI
@@ -513,7 +514,7 @@ def chat_message():
         ai_response = response
 
         # Append the bot response to the conversation history
-        session["conversation_history"].append(
+        request.state.conversation_history.append(
             {"sender": "assistant", "message": ai_response}
         )
 
@@ -523,5 +524,19 @@ def chat_message():
         return {"response": f"An error occurred: {str(e)}"}, 500
 
 
+@app.get("/debug-routes")
+async def debug_routes():
+    routes = [
+        {
+            "name": route.name,
+            "path": route.path,
+            "methods": route.methods if hasattr(route, "methods") else None,
+        }
+        for route in app.routes
+    ]
+    return {"routes": routes}
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

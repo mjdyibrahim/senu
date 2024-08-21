@@ -9,3 +9,4 @@ venv/
 assertion.log
 azure_openai_usage.log
 openai_usage.log
+.aider*

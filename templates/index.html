@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senu - Your AI Startup Copilot</title>
-    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
-    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}" type="image/png">
-    <link rel="icon" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}" type="image/png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Senu</div>
-            <ul class="nav-links">
-                <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="{{ url_for('entrepreneur') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="{{ url_for('feedback') }}"><i class="fas fa-chart-line"></i> Feedback</a></li>
-                <li><a href="{{ url_for('resources') }}"><i class="fas fa-book"></i> Resources</a></li>
-                <li><a href="{{ url_for('signin') }}"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends "base.html" %}
+
+{% block content %}
     <main class="main-content">
     <section class="hero">
         <img src="/static/falcon.png" alt="Background Image" class="hero-background">
@@ -55,9 +31,9 @@
             <div id="action-container">
                 <div id="form-container">
                     <h3>Upload Pitch Deck -> Get instant score</h3>
-                    <form id="pitchDeckForm" method="POST" enctype="multipart/form-data">
+                    <form id="pitchDeckForm" action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
                         <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" required>
-                        <input type="file" id="pitchDeck" name="pitchDeck" accept="application/pdf" required>
+                        <input type="file" id="pitchDeck" name="file" autocomplete="name" accept="application/pdf" required>
                         <button id="submitBtn" type="submit">Analyze my Pitch Deck</button>
                     </form>
                 </div>
@@ -79,9 +55,5 @@
     </section>
     
     </main>
-    <footer>
-        <p>&copy; 2024 Senu. All rights reserved.</p>
-    </footer>
-    <script src="static/scripts.js"></script>
-</body>
-</html>
+
+{% endblock %}

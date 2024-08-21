@@ -100,4 +100,3 @@ if __name__ == "__main__":
 
     # Debugging 3: Print the full processed response: Bad response [returning the first character]
     print("Answer: ", answer)
-

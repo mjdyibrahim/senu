@@ -13,8 +13,7 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE   
- startups (
+CREATE TABLE startups (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users(id),
     date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -28,6 +27,36 @@ CREATE TABLE  
     phone VARCHAR(20),
     address TEXT,
     owner VARCHAR(100)
+);
+
+CREATE TABLE pitch (
+    id SERIAL PRIMARY KEY,
+    startup_id INTEGER REFERENCES startups(id),
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    name VARCHAR(100) NOT NULL,
+    tagline TEXT,
+    description TEXT,
+    dashboard_id INTEGER REFERENCES dashboard(id),
+    team_id INTEGER REFERENCES teams(id),
+    team_member_id INTEGER REFERENCES team_members(id),
+    fundraising_id INTEGER REFERENCES fundraising(id),
+    market_id INTEGER REFERENCES market(id),
+    business_model_id INTEGER REFERENCES business_model(id),
+    product_id INTEGER REFERENCES product(id),
+    traction_id INTEGER REFERENCES traction(id),
+);
+
+CREATE TABLE dashboard (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id),
+    startup_id INTEGER REFERENCES startups(id),
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    burn_rate NUMERIC(5,2), 
+    customer_acquisition_cost NUMERIC(5,2), 
+    customer_lifetime_value NUMERIC(5,2), 
+    exit_potential NUMERIC(5,2)
+    valuation NUMERIC(5,2), 
+    mojo NUMERIC(5,2)
 );
 
 CREATE TABLE teams (

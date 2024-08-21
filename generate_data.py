@@ -3,61 +3,55 @@ import json
 import os
 import datetime
 import logging
+from openai import OpenAI
+import models
 import dspy
 from aimlapi import AIMLAPI
-from openinference.instrumentation.dspy import DSPyInstrumentor
 from dotenv import load_dotenv
-from opentelemetry import trace as trace_api
+from opentelemetry import trace
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
-from opentelemetry.sdk import trace as trace_sdk
-from opentelemetry.sdk.trace.export import SimpleSpanProcessor
-
-load_dotenv()
-
-# Initialize Langchain auto-instrumentation
-DSPyInstrumentor().instrument()
-
-tracer_provider = trace_sdk.TracerProvider()
-span_exporter = OTLPSpanExporter("http://localhost:6006/v1/traces")
-span_processor = SimpleSpanProcessor(span_exporter)
-tracer_provider.add_span_processor(span_processor)
-trace_api.set_tracer_provider(tracer_provider)
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+from opentelemetry.instrumentation.openai import OpenAIInstrumentor
 
 # Set up logging
-LOG_FILE = 'api_calls.log'
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+print("Script started")
+logging.info("Initializing...")
+
+# Load environment variables
+load_dotenv()
+print("Environment variables loaded")
+
+# Set up OpenTelemetry
+trace.set_tracer_provider(TracerProvider())
+tracer = trace.get_tracer(__name__)
+print("OpenTelemetry tracer set up")
+
+# Set up the OTLP exporter
+otlp_exporter = OTLPSpanExporter(endpoint="http://localhost:4318/v1/traces")
+span_processor = BatchSpanProcessor(otlp_exporter)
+trace.get_tracer_provider().add_span_processor(span_processor)
+print("OTLP exporter set up")
+
+# Initialize OpenAI instrumentation
+OpenAIInstrumentor().instrument()
+print("OpenAI instrumentation initialized")
+
+# Initialize OpenAI client
+client = OpenAI()
+print("OpenAI client initialized")
 
 # Set your API key and endpoint
 AIML_API_KEY = os.getenv("AIML_API_KEY")
 ENDPOINT_URL = 'https://api.aimlapi.com/chat/completions'
 
-model = "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_BASE = os.getenv("OPENAI_API_BASE")
 
-
-# # Configure DSPy
-# llama_lm = AIMLAPI(
-#     model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
-#     api_base=ENDPOINT_URL,
-#     api_key=AIML_API_KEY,
-# )
-
-# dspy.configure(lm=llama_lm)
-
-# prompt = "How is the weather today?"
-
-# response = dspy.Predict("question -> answer") (question=prompt, lm=llama_lm).answer
-# print(response)
-
-# Headers for API request
-headers = {
-    'Authorization': f'Bearer {AIML_API_KEY}',
-    'Content-Type': 'application/json'
-}
+meta_model = "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+openai_model ="openai/gpt-4o"
 
 # Define your JSON template for generating data
 template = {
@@ -218,7 +212,7 @@ prompts = {
             "Role": "Generate a primary role for this team member (e.g., Marketing, Sales, Product, Technical, etc.):"
         },
         "Team Overview": "Provide an overview of the team's qualifications and expertise:",
-        "Team Assessment": "How would you assess the team’s experience and ability to execute the business plan?"
+        "Team Assessment": "How would you assess the team's experience and ability to execute the business plan?"
     },
     "Fundraising": {
         "Current Amount Being Raised": "How much money is the startup currently raising (in USD)?",
@@ -433,7 +427,6 @@ data_schema = {
     }
 }
 
-
 # Function to generate data based on the provided template and prompts
 def generate_data(section, fields, system_message):
     prompt = f"Generate data for the section: {section} with the following fields: {json.dumps(fields)}"
@@ -443,34 +436,34 @@ def generate_data(section, fields, system_message):
             {"role": "system", "content": system_message},
             {"role": "user", "content": prompt}
         ],
-        "model": model,
-        "max_tokens": 2000
+        "model": openai_model,
+        "max_tokens": 4000,
+        "response_format": {"type": "json_object"}
     }
     
     try:
-        response = requests.post(ENDPOINT_URL, headers=headers, json=data)
-        response.raise_for_status()  # Raise an exception for HTTP errors
-
+        response = client.chat.completions.create(
+            model=data["model"],
+            messages=data["messages"],
+            max_tokens=data["max_tokens"],
+            response_format=data["response_format"]
+        )
+        print(response)
         # Extracting the plain text content from the response
-        response_json = response.json()
-        content = response_json.get('choices', [{}])[0].get('message', {}).get('content', '')
+        content = response.choices[0].message.content
         
         if content:
             return content.strip()  # Return the raw LLM output as plain text
         else:
             logging.error("No content found in response.")
             return None
-    except requests.exceptions.RequestException as e:
-        logging.error("Request error: %s", e)
-        return None
     except Exception as e:
-        logging.error("Error parsing response: %s", e)
+        logging.error(f"Error parsing response: {str(e)}", exc_info=True)
         return None
-
 
 def save_startup_data_to_file(startup_id, generated_data):
     # Directory to save the startup data
-    output_dir = 'data/generated_datasets'
+    output_dir = 'data/synthetic'
     os.makedirs(output_dir, exist_ok=True)
     
     # File name based on the startup ID (e.g., 00001.txt)
@@ -482,9 +475,8 @@ def save_startup_data_to_file(startup_id, generated_data):
     
     logging.info(f'Saved startup data to {output_file}')
 
-
 def get_last_startup_id():
-    output_dir = 'generated_datasets'
+    output_dir = 'data/synthetic'
     os.makedirs(output_dir, exist_ok=True)
 
     # Get the list of files in the output directory
@@ -501,8 +493,8 @@ def get_last_startup_id():
     
     return last_id
 
-
 def main():
+    print("Entering main function")
     # Get the last startup ID from existing files
     last_startup_id = get_last_startup_id()
     startup_id = last_startup_id + 1  # Start with the next ID
@@ -533,5 +525,13 @@ def main():
         if startup_id > last_startup_id + 10:  # For example, generate data for 10 startups
             break
 
+    print("Main function completed")
+
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        logging.error(f"Error details: {str(e)}", exc_info=True)
+
+print("Script ended")

@@ -1,0 +1,10 @@
+Flask
+twilio
+langchain
+chromadb
+openai
+tiktoken
+python-binary-memcached
+pydub
+ffmpeg-downloader
+ffprobe
