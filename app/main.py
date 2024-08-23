@@ -31,14 +31,11 @@ tracer_provider.add_span_processor(span_processor)
 trace_api.set_tracer_provider(tracer_provider)
 
 from openinference.instrumentation.dspy import DSPyInstrumentor
-
+from app import app
 from app.services.DSPyevaluate import *
 from app.services.DSPycomplete import TeamSectionExtractor
 
 DSPyInstrumentor().instrument()
-
-# FastAPI App Configuration
-app = FastAPI()
 
 # Determine the absolute path to your static and templates directories
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -422,10 +419,10 @@ async def upload_file(email: str = Form(...), file: UploadFile = File(...), db: 
     return {"error": "Invalid file type. Only PDF and TXT files are allowed."}, 400
 
 
-@app.get("/entrepreneur")
-async def entrepreneur(request: Request):
-    """Entrepreneur page"""
-    return templates.TemplateResponse("entrepreneur.html", {"request": request})
+@app.get("/dashboard")
+async def dashboard(request: Request):
+    """dashboard page"""
+    return templates.TemplateResponse("dashboard.html", {"request": request})
 
 
 @app.get("/feedback")

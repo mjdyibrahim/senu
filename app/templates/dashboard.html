@@ -1,0 +1,37 @@
+{% extends "base.html" %}                                                                                                     
+                                                                                                                               
+{% block content %}                                                                                                           
+    <main class="main-content">                                                                                               
+        <section class="dashboard">                                                                                           
+            <h2>Startup Dashboard</h2>                                                                                        
+            <div id="burn-rate-graph" class="plotly-graph"></div>                                                             
+            <div id="clv-graph" class="plotly-graph"></div>                                                                   
+            <div id="cac-graph" class="plotly-graph"></div>                                                                   
+            <div id="valuation-graph" class="plotly-graph"></div>                                                             
+            <div id="exit-potential-graph" class="plotly-graph"></div>                                                        
+        </section>                                                                                                            
+    </main>                                                                                                                   
+                                                                                                                              
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>                                                          
+    <script>                                                                                                                  
+        // Burn Rate Graph                                                                                                    
+        var burnRateData = {{ burn_rate_data | safe }};                                                                       
+        Plotly.newPlot('burn-rate-graph', burnRateData);                                                                      
+                                                                                                                              
+        // Customer Lifetime Value (CLV) Graph                                                                                
+        var clvData = {{ clv_data | safe }};                                                                                  
+        Plotly.newPlot('clv-graph', clvData);                                                                                 
+                                                                                                                              
+        // Customer Acquisition Cost (CAC) Graph                                                                              
+        var cacData = {{ cac_data | safe }};                                                                                  
+        Plotly.newPlot('cac-graph', cacData);                                                                                 
+                                                                                                                              
+        // Valuation Graph                                                                                                    
+        var valuationData = {{ valuation_data | safe }};                                                                      
+        Plotly.newPlot('valuation-graph', valuationData);                                                                     
+                                                                                                                              
+        // Exit Potential Graph                                                                                               
+        var exitPotentialData = {{ exit_potential_data | safe }};                                                             
+        Plotly.newPlot('exit-potential-graph', exitPotentialData);                                                            
+    </script>                                                                                                                 
+{% endblock %} 
