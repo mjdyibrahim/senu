@@ -7,7 +7,7 @@ from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
-from database import get_db
+from dependencies import get_db
 from werkzeug.utils import secure_filename
 import openai
 import pymupdf
@@ -18,18 +18,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 import dspy
-
-# from dspy.functional import TypedPredictor
-# import spacy
-# from typing import List, Dict, Any
-# from pydantic import BaseModel
-# import json
-
-# import phoenix as px
-from openinference.instrumentation.dspy import DSPyInstrumentor
-
-from DSPyevaluate import *
-from DSPycomplete import TeamSectionExtractor
 
 from opentelemetry import trace as trace_api
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
@@ -42,7 +30,23 @@ span_processor = SimpleSpanProcessor(span_exporter)
 tracer_provider.add_span_processor(span_processor)
 trace_api.set_tracer_provider(tracer_provider)
 
+from openinference.instrumentation.dspy import DSPyInstrumentor
+
+from services.DSPyevaluate import *
+from services.DSPycomplete import TeamSectionExtractor
+
 DSPyInstrumentor().instrument()
+
+# FastAPI App Configuration
+app = FastAPI()
+
+# Determine the absolute path to your static and templates directories
+base_dir = os.path.dirname(os.path.abspath(__file__))
+static_dir = os.path.join(base_dir, "static")
+templates_dir = os.path.join(base_dir, "templates")
+uploads_dir = "/uploads"  # This is the path inside the container
+
+app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 
 
 # Load environment variables
@@ -52,30 +56,26 @@ load_dotenv()
 AI71_API_KEY = os.getenv("AI71_API_KEY")
 AI71_BASE_URL = os.getenv("AI71_BASE_URL")
 
-# FastAPI App Configuration
-app = FastAPI()
 
-# Mount static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
+os.makedirs(uploads_dir, exist_ok=True)
+
+# Mount the static directory
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
+
+# Mount the uploads directory as a static files directory
+app.mount("/uploads", StaticFiles(directory=uploads_dir), name="uploads")
 
 # Set up Jinja2 templates
 templates = Jinja2Templates(directory="templates")
 
-UPLOAD_FOLDER = "uploads/"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+@app.get("/uploads/{filename}")
+async def get_uploaded_file(filename: str):
+    """Serve uploaded files"""
+    file_path = os.path.join(uploads_dir, filename)
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="File not found")
+    return FileResponse(file_path)
 
-# Use UPLOAD_FOLDER directly in your code instead of app.config["UPLOAD_FOLDER"]
-
-app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
-
-# nlp = spacy.load('en_core_web_sm')
-
-
-# for name, logger in logging.root.manager.loggerDict.items():
-#     if name.startswith("phoenix.") and isinstance(logger, logging.Logger):
-#         logger.setLevel(logging.ERROR)
-#         logger.handlers.clear()
-#         logger.addHandler(logging.NullHandler())
 
 # Allowed file extensions
 ALLOWED_EXTENSIONS = {"pdf", "txt"}
@@ -244,7 +244,7 @@ def create_spider_graph(startup_name, scores):
 
     # Save or display the plot
     plt.savefig(
-        os.path.join(UPLOAD_FOLDER, f"{startup_name}_spider_graph.png")
+        os.path.join(uploads_dir, f"{startup_name}_spider_graph.png")
     )
     plt.close()
 
@@ -343,7 +343,7 @@ async def index(request: Request):
 
 
 @app.post("/upload")
-async def upload_file(file: UploadFile = File(...), email: str = Form(...), db: Session = Depends(get_db)):
+async def upload_file(email: str = Form(...), file: UploadFile = File(...), db: Session = Depends(get_db)):
     """Processes actions for file upload"""
     if not file or not email:
         return {"error": "No file or email provided!"}, 400
@@ -355,7 +355,7 @@ async def upload_file(file: UploadFile = File(...), email: str = Form(...), db: 
         filename = secure_filename(file.filename)
         startup_name = os.path.splitext(filename)[0]
         file_extension = os.path.splitext(filename)[1].lower()
-        file_path = os.path.join(UPLOAD_FOLDER, filename)
+        file_path = os.path.join(uploads_dir, filename)
         with open(file_path, "wb") as f:
             f.write(await file.read())
 
@@ -422,12 +422,6 @@ async def upload_file(file: UploadFile = File(...), email: str = Form(...), db: 
     return {"error": "Invalid file type. Only PDF and TXT files are allowed."}, 400
 
 
-@app.get("/uploads/{filename}")
-async def uploaded_file(filename: str):
-    """Actions for file upload"""
-    return FileResponse(os.path.join(UPLOAD_FOLDER, filename))
-
-
 @app.get("/entrepreneur")
 async def entrepreneur(request: Request):
     """Entrepreneur page"""
@@ -450,92 +444,6 @@ async def resources(request: Request):
 async def signin(request: Request):
     """Signin page"""
     return templates.TemplateResponse("signin.html", {"request": request})
-
-
-@app.get("/chat")
-async def chat(request: Request):
-    """Chat page"""
-    return templates.TemplateResponse("chat.html", {"request": request})
-
-
-@app.post("/chat/message")
-async def chat_message(request: Request, db: Session = Depends(get_db)):
-    """Chat interaction"""
-    data = await request.json()
-    user_message = data.get("message")
-
-    if not user_message:
-        return {"response": "No message provided."}, 400
-
-    # Initialize conversation history if not present
-    if not hasattr(request.state, "conversation_history"):
-        request.state.conversation_history = []
-
-    # Append the user message to the conversation history
-    request.state.conversation_history.append({"sender": "user", "message": user_message})
-
-    # Create context for the AI model
-    conversation_history = "\n".join(
-        f"{entry['sender']}: {entry['message']}"
-        for entry in request.state.conversation_history
-    )
-
-    try:
-        openai_client = openai.OpenAI(api_key=AI71_API_KEY,base_url=AI71_BASE_URL)
-        system_prompt = """You are Senu. A Conversational AI Startup Copilot, you are in a chat window 
-                            having a conversation with the user, your mission is to extract data from the user about their startup including 
-                            their team, fundraising, market, business model, product and traction"""
-        response = ""
-        messages = [
-            {"role": "system", "content": f"{system_prompt}"},
-        ] + [{"role": "user", "content": f"{user_message}"}]
-
-        # Simple invocation:
-        for chunk in openai_client.chat.completions.create(
-            model="tiiuae/falcon-180b-chat", messages=messages, stream=True
-        ):
-            if chunk.choices[0].delta.content:
-                print(f"{chunk}")
-                print(f"Request data: {data}")
-                print(f"Conversation history: {request.state.conversation_history}")
-                print(f"Messages sent to API: {messages}")
-                response += chunk.choices[0].delta.content
-        # # Configure DSPy
-        # falcon_lm = dspy.Any(model="tiiuae/falcon-11b", base_url=AI71_BASE_URL, api_key=AI71_API_KEY)
-        # dspy.configure(lm=falcon_lm)
-
-        # # Create a prompt for the AI
-        # prompt = f"User: {user_message}"
-        # conversation_history = system_prompt + prompt
-        # # Generate a response using DSPy
-        # response =  dspy.ChainOfThought("question, context -> answer", n=5)(question=prompt, context=conversation_history)
-        print(f"{response}")
-
-        ai_response = response
-
-        # Append the bot response to the conversation history
-        request.state.conversation_history.append(
-            {"sender": "assistant", "message": ai_response}
-        )
-
-        return {"response": ai_response}
-
-    except Exception as e:
-        return {"response": f"An error occurred: {str(e)}"}, 500
-
-
-@app.get("/debug-routes")
-async def debug_routes():
-    routes = [
-        {
-            "name": route.name,
-            "path": route.path,
-            "methods": route.methods if hasattr(route, "methods") else None,
-        }
-        for route in app.routes
-    ]
-    return {"routes": routes}
-
 
 if __name__ == "__main__":
     import uvicorn

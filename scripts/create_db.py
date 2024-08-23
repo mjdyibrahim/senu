@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError, ProgrammingError
 from sqlalchemy.engine.url import make_url
-from models import Base  # This imports all models
+from app.models import Base  # This imports all models
 
 # Update this line with the correct database URL
 DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/senu"

@@ -8,8 +8,7 @@ CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
-    password_hash VARCHAR(255)   
- NOT NULL,
+    password_hash VARCHAR(255) NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -43,7 +42,7 @@ CREATE TABLE pitch (
     market_id INTEGER REFERENCES market(id),
     business_model_id INTEGER REFERENCES business_model(id),
     product_id INTEGER REFERENCES product(id),
-    traction_id INTEGER REFERENCES traction(id),
+    traction_id INTEGER REFERENCES traction(id)
 );
 
 CREATE TABLE dashboard (
@@ -54,7 +53,7 @@ CREATE TABLE dashboard (
     burn_rate NUMERIC(5,2), 
     customer_acquisition_cost NUMERIC(5,2), 
     customer_lifetime_value NUMERIC(5,2), 
-    exit_potential NUMERIC(5,2)
+    exit_potential NUMERIC(5,2),
     valuation NUMERIC(5,2), 
     mojo NUMERIC(5,2)
 );
@@ -63,7 +62,7 @@ CREATE TABLE teams (
     id SERIAL PRIMARY KEY,
     startup_id INTEGER REFERENCES startups(id),
     name VARCHAR(100),
-    description TEXT,
+    description TEXT
     -- Other team-related fields
 );
 
@@ -94,9 +93,9 @@ CREATE TABLE team_members (
     creative BOOLEAN,
     technical BOOLEAN,
     operation BOOLEAN,
-    other_role TEXT
+    other_role TEXT,
     -- Contact fields
-    linkedin VARCHAR(255)
+    linkedin VARCHAR(255),
     email VARCHAR(255)
 );
 

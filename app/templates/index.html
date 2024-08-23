@@ -33,7 +33,7 @@
                     <h3>Upload Pitch Deck -> Get instant score</h3>
                     <form id="pitchDeckForm" action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
                         <input type="email" id="email" name="email" autocomplete="email" placeholder="Your Email" required>
-                        <input type="file" id="pitchDeck" name="file" autocomplete="name" accept="application/pdf" required>
+                        <input type="file" id="pitchDeck" name="file" accept="application/pdf" required>
                         <button id="submitBtn" type="submit">Analyze my Pitch Deck</button>
                     </form>
                 </div>

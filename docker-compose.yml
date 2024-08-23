@@ -1,12 +1,14 @@
 # docker-compose.yml
 services:
   app:
-    build: . 
-    command: ["python", "app.py"] 
+    build: .
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
     ports:
-      - "8000:8000" 
+      - "8000:8000"
     volumes:
-      - .:/app
+      - ./app:/app
+      - ./uploads:/uploads
+      - ./scripts:/scripts
     environment:
       - APP_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/senu
     depends_on:
@@ -20,7 +22,7 @@ services:
       - 4317:4317  # PHOENIX_GRPC_PORT
       - 9090:9090  # [Optional] PROMETHEUS PORT IF ENABLED
     environment:
-      - PHOENIX_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres
+      - PHOENIX_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/phoenix
   db:
     image: postgres
     restart: always

@@ -4,9 +4,9 @@ import os
 import datetime
 import logging
 from openai import OpenAI
-import models
+import app.models
 import dspy
-from aimlapi import AIMLAPI
+from app.services.aimlapi import AIMLAPI
 from dotenv import load_dotenv
 from opentelemetry import trace
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter

@@ -10,8 +10,8 @@ from langchain.agents import OpenAIFunctionsAgent, AgentExecutor
 from langchain.memory import AgentTokenBufferMemory
 from langchain.prompts import SystemMessage, MessagesPlaceholder
 from langchain.chat_models import ChatOpenAI
-from app.config import Config  # Adjust the import path as needed
-from app.database.database import get_db
+from app.whatsapp.config import Config  
+from app.dependencies.database import get_db
 from sqlalchemy.orm import Session
 
 router = APIRouter()
@@ -202,4 +202,3 @@ audio_queue_singleton = AudioQueueSingleton()
 # Start your background processes
 Process(target=message_queue_singleton.responder, args=(msg_queue,)).start()
 Process(target=audio_queue_singleton.responder, args=(audio_queue,)).start()
-        return result            
