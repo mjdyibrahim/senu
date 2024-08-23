@@ -7,7 +7,7 @@ from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
-from dependencies import get_db
+from app.dependencies import get_db
 from werkzeug.utils import secure_filename
 import openai
 import pymupdf
