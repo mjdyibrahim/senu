@@ -44,7 +44,7 @@ app = FastAPI()
 base_dir = os.path.dirname(os.path.abspath(__file__))
 static_dir = os.path.join(base_dir, "static")
 templates_dir = os.path.join(base_dir, "templates")
-uploads_dir = "/uploads"  # This is the path inside the container
+uploads_dir = os.path.join(base_dir, "uploads")  # This is the path inside the container
 
 app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 
