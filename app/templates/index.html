@@ -56,15 +56,4 @@
     
     </main>
 
-<script>
-    function validateForm() {
-        var email = document.getElementById("email").value;
-        var file = document.getElementById("pitchDeck").value;
-        if (email == "" || file == "") {
-            alert("Email and file must be filled out");
-            return false;
-        }
-        return true;
-    }
-</script>
 {% endblock %}
