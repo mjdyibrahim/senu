@@ -32,8 +32,8 @@ trace_api.set_tracer_provider(tracer_provider)
 
 from openinference.instrumentation.dspy import DSPyInstrumentor
 
-from services.DSPyevaluate import *
-from services.DSPycomplete import TeamSectionExtractor
+from app.services.DSPyevaluate import *
+from app.services.DSPycomplete import TeamSectionExtractor
 
 DSPyInstrumentor().instrument()
 
