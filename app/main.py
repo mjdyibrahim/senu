@@ -66,7 +66,7 @@ app.mount("/static", StaticFiles(directory=static_dir), name="static")
 app.mount("/uploads", StaticFiles(directory=uploads_dir), name="uploads")
 
 # Set up Jinja2 templates
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory=templates_dir)
 
 @app.get("/uploads/{filename}")
 async def get_uploaded_file(filename: str):
