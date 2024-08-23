@@ -8,7 +8,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 from werkzeug.utils import secure_filename
-from app import app
+from app.__init__ import app
 from app.dependencies.auth import get_current_user
 from app.dependencies.database import get_db
 import openai
