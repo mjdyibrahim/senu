@@ -16,7 +16,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import dspy
 
 from opentelemetry import trace as trace_api
@@ -50,7 +50,7 @@ app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 
 
 # Load environment variables
-load_dotenv()
+load_dotenv(find_dotenv())
 
 # Access environment variables
 AI71_API_KEY = os.getenv("AI71_API_KEY")
