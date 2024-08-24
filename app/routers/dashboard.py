@@ -8,4 +8,15 @@ templates = Jinja2Templates(directory="templates")
 
 @router.get("/dashboard", response_class=HTMLResponse)
 async def dashboard(request: Request, scorecard: str = ""):
-    return templates.TemplateResponse("dashboard.html", {"request": request, "scorecard": scorecard})
+    return templates.TemplateResponse(
+        "dashboard.html",
+        {
+            "request": request,
+            "scorecard": scorecard,
+            "burn_rate_data": [],  # Replace with actual data
+            "clv_data": [],        # Replace with actual data
+            "cac_data": [],        # Replace with actual data
+            "valuation_data": [],  # Replace with actual data
+            "exit_potential_data": []  # Replace with actual data
+        }
+    )
