@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
     const outputSection = document.querySelector('.output');
 
-    // Add event listener to the submit button
-    submitBtn.addEventListener('click', async (event) => {
-        event.preventDefault(); // Prevent the default form submission
+    // Add event listener to the form submission
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent the default form submission to handle it via JavaScript
 
         const email = document.getElementById('email').value;
         const pitchDeck = document.getElementById('pitchDeck').files[0];
