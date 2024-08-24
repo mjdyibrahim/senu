@@ -6,5 +6,5 @@ from app import templates
 router = APIRouter()
 
 @router.get("/dashboard", response_class=HTMLResponse)
-async def show_result(request: Request, scorecard: str = ""):
+async def dashboard(request: Request, scorecard: str = ""):
     return templates.TemplateResponse("dashboard.html", {"request": request, "scorecard": scorecard})
