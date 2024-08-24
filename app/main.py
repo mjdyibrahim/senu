@@ -8,7 +8,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 from werkzeug.utils import secure_filename
-from app.__init__ import app
+from .__init__ import app
 from app.dependencies.auth import get_current_user
 from app.dependencies.database import get_db
 import openai
@@ -34,20 +34,27 @@ trace_api.set_tracer_provider(tracer_provider)
 
 from openinference.instrumentation.dspy import DSPyInstrumentor
 
-from services.DSPyevaluate import *
-from services.DSPycomplete import TeamSectionExtractor
+from app.services.DSPyevaluate import *
+from app.services.DSPycomplete import TeamSectionExtractor
 
 DSPyInstrumentor().instrument()
-
-
 
 # Determine the absolute path to your static and templates directories
 base_dir = os.path.dirname(os.path.abspath(__file__))
 static_dir = os.path.join(base_dir, "static")
 templates_dir = os.path.join(base_dir, "templates")
-uploads_dir = "/uploads"  # This is the path inside the container
+uploads_dir = os.path.join(base_dir, "uploads")  # This is the path inside the container
 
 app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
+
+# Mount the static directory
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
+
+# Mount the uploads directory as a static files directory
+app.mount("/uploads", StaticFiles(directory=uploads_dir), name="uploads")
+
+# Set up Jinja2 templates
+templates = Jinja2Templates(directory=templates_dir)
 
 
 # Load environment variables
@@ -59,14 +66,6 @@ AI71_BASE_URL = os.getenv("AI71_BASE_URL")
 
 os.makedirs(uploads_dir, exist_ok=True)
 
-# Mount the static directory
-app.mount("/static", StaticFiles(directory=static_dir), name="static")
-
-# Mount the uploads directory as a static files directory
-app.mount("/uploads", StaticFiles(directory=uploads_dir), name="uploads")
-
-# Set up Jinja2 templates
-templates = Jinja2Templates(directory="templates")
 
 # If you need to add any startup events or other configurations, you can do it here
 @app.on_event("startup")
@@ -433,13 +432,6 @@ async def upload_file(email: str = Form(...), file: UploadFile = File(...), db: 
 
     return {"error": "Invalid file type. Only PDF and TXT files are allowed."}, 400
 
-
-@app.get("/entrepreneur")
-async def entrepreneur(request: Request):
-    """Entrepreneur page"""
-    return templates.TemplateResponse("entrepreneur.html", {"request": request})
-
-
 @app.get("/feedback")
 async def feedback(request: Request):
     """Feedback Page"""
@@ -459,4 +451,4 @@ async def signin(request: Request):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app.main, host="0.0.0.0", port=8000)

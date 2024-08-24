@@ -6,7 +6,8 @@ from .gamification import router as gamification_router
 from .roadmap import router as roadmap_router                                                                                 
 from .debug_routes import router as debug_router                                                                                     
                                                                                                                         
-router = APIRouter()                                                                                                          
+router = APIRouter()
+                                                                                                          
 router.include_router(chat_router, prefix="/chat", tags=["chat"])                                                             
 router.include_router(dashboard_router, prefix="/dashboard", tags=["dashboard"])                                              
 router.include_router(gamification_router, prefix="/gamification", tags=["gamification"])                                     
