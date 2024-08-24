@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y curl && \
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt requirements.txt
+COPY requirements.txt .
 
 # Upgrade pip and install Python dependencies
 # RUN pip install --upgrade pip && pip install -r requirements.txt
