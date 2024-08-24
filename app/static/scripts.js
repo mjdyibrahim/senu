@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('pitchDeck', pitchDeck);
 
         try {
-            const response = await fetch('/upload', {
+            const response = await fetch(form.action, {
                 method: 'POST',
                 body: formData
             });
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             outputSection.innerHTML = 'An error occurred while processing your request.';
         } finally {
             // Reset button text back to "Submit"
-            submitBtn.textContent = 'Submit';
+            submitBtn.textContent = 'Analyze my Pitch Deck';
         }
     });
 });
