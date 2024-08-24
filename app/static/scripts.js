@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData();
         formData.append('email', email);
-        formData.append('pitchDeck', pitchDeck);
+        formData.append('file', pitchDeck);
 
         try {
             const response = await fetch(form.action, {
