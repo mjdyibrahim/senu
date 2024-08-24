@@ -367,10 +367,13 @@ async def upload_file(email: str = Form(...), file: UploadFile = File(...), db: 
         startup_name = os.path.splitext(filename)[0]
         file_extension = os.path.splitext(filename)[1].lower()
         file_path = os.path.join(uploads_dir, filename)
-        with open(file_path, "wb") as f:
-            f.write(await file.read())
-
         try:
+            with open(file_path, "wb") as f:
+                f.write(await file.read())
+
+            if not os.path.exists(file_path):
+                raise FileNotFoundError(f"File not saved correctly: {file_path}")
+
             # Process the uploaded file
             if file_extension == ".pdf":
                 pitchdeck_text = process_pdf(file_path)
