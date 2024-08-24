@@ -43,7 +43,7 @@ DSPyInstrumentor().instrument()
 base_dir = os.path.dirname(os.path.abspath(__file__))
 static_dir = os.path.join(base_dir, "static")
 templates_dir = os.path.join(base_dir, "templates")
-uploads_dir = os.path.join(base_dir, "../uploads")  # This is the path inside the container
+uploads_dir = os.path.abspath(os.path.join(base_dir, "../uploads"))  # Ensure absolute path
 
 app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 
@@ -64,7 +64,8 @@ load_dotenv()
 AI71_API_KEY = os.getenv("AI71_API_KEY")
 AI71_BASE_URL = os.getenv("AI71_BASE_URL")
 
-os.makedirs(uploads_dir, exist_ok=True)
+if not os.path.exists(uploads_dir):
+    os.makedirs(uploads_dir, exist_ok=True)
 
 
 # If you need to add any startup events or other configurations, you can do it here
