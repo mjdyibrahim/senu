@@ -11,11 +11,11 @@ router = APIRouter()
 
 def create_app() -> FastAPI:
     app =FastAPI()
-    router.include_router(chat_router, prefix="/chat", tags=["chat"])                                                             
-    router.include_router(dashboard_router, prefix="/dashboard", tags=["dashboard"])                                              
-    router.include_router(gamification_router, prefix="/gamification", tags=["gamification"])                                     
-    router.include_router(roadmap_router, prefix="/roadmap", tags=["roadmap"])                                                    
-    router.include_router(debug_router, prefix="/debug", tags=["debug"])     
+    app.router.include_router(chat_router)                                                             
+    app.router.include_router(dashboard_router)                                              
+    app.router.include_router(gamification_router)                                     
+    app.router.include_router(roadmap_router)                                                    
+    app.router.include_router(debug_router)     
     return app
 
 app = create_app()

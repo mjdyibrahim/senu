@@ -6,7 +6,6 @@ from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
 from ..dependencies import get_db
 from dotenv import load_dotenv
-from app import templates
 
 load_dotenv()
 
@@ -14,6 +13,8 @@ AI71_API_KEY = os.getenv("AI71_API_KEY")
 AI71_BASE_URL = os.getenv("AI71_BASE_URL")
 
 router = APIRouter()
+templates = Jinja2Templates(directory="app/templates")
+
 
 @router.get("/chat")
 async def chat(request: Request):
