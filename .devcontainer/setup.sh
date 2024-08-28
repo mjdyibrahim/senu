@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Activate the virtual environment
-source /workspace/venv/bin/activate
+source venv/bin/activate
 
 # Update pip
 sudo pip install --upgrade pip
