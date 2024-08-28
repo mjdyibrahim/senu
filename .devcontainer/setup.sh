@@ -9,6 +9,8 @@ sudo pip install --upgrade pip
 # Install any missing requirements
 sudo pip install -r requirements.txt
 
-# Deactivate the virtual environment
-deactivate# Install Git
+# Install Git
 apt-get update && apt-get install -y git
+
+# Deactivate the virtual environment
+deactivate
