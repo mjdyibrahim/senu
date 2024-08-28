@@ -1,8 +1,8 @@
 # Use a base Python image
 FROM python:3.11-slim-buster
 
-# Install Node.js and Git
-RUN apt-get update && apt-get install -y curl git && \
+# Install Node.js
+RUN apt-get update && apt-get install -y curl && \
     curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && \
     apt-get install -y nodejs
 
