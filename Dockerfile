@@ -12,8 +12,8 @@ WORKDIR /app
 # Copy the requirements file into the container
 COPY requirements.txt requirements.txt
 
-# Install Python dependencies
-RUN pip install -r requirements.txt
+# Upgrade pip and install Python dependencies
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
