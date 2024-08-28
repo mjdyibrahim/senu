@@ -14,7 +14,7 @@ export PATH="venv/bin:$PATH"
 # Upgrade pip
 pip install --upgrade pip
 
-# Install any missing requirements
+# Install any missing requirements, including uvicorn
 pip install -r requirements.txt
 
 # Install Git
