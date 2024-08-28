@@ -7,7 +7,7 @@ source venv/bin/activate
 pip install --upgrade pip
 
 # Install any missing requirements
-sudo pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Install Git
 apt-get update && apt-get install -y git
