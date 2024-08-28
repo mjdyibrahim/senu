@@ -12,5 +12,3 @@ sudo pip install -r requirements.txt
 # Install Git
 apt-get update && apt-get install -y git
 
-# Deactivate the virtual environment
-deactivate
