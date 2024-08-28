@@ -2,6 +2,6 @@ version: '3.8'
 services:
   app:
     volumes:
-      - ..:/workspace:cached
-      - ../venv:/workspace/venv:cached
+      - .:/workspace:cached
+      - ./venv:/workspace/venv:cached
     command: /bin/sh -c "while sleep 1000; do :; done"
