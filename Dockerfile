@@ -13,7 +13,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Upgrade pip and install Python dependencies
-# RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
