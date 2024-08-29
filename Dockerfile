@@ -9,15 +9,15 @@ RUN apt-get update && apt-get install -y curl && \
 # Set the working directory in the container
 WORKDIR /app
 
-# Create a virtual environment
-RUN python -m venv /app/venv
+# Copy the local virtual environment into the container
+COPY ./venv /app/venv
 
 # Set the PATH to use the virtual environment
 ENV PATH="/app/venv/bin:$PATH"
 
 # Install Python dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
