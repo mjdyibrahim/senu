@@ -18,11 +18,8 @@ services:
   supabase:
     image: supabase/postgres:0.14.0  # Use a specific version tag
     container_name: senu_supabase
-    environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_DB: postgres
-      JWT_SECRET: ${JWT_SECRET}
+    env_file:
+      - .env
     ports:
       - '54321:5432'  # Expose port 54321 for external access
     depends_on:
