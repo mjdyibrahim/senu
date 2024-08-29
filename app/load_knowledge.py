@@ -23,12 +23,12 @@ embedding_model = HuggingFaceEmbeddings()
 knowledge_base_dir = "knowledge_base" 
 
 # Retrieve database credentials from environment variables
-db_host = os.getenv("DATABASE_HOST")
-db_port = int(os.getenv("DATABASE_PORT"))
-db_user = os.getenv("DATABASE_USER")
-db_password = os.getenv("DATABASE_PASSWORD")
-db_name = os.getenv("DATABASE_NAME")
-db_url = os.getenv("DATABASE_URL")
+db_host = os.getenv("POSTGRES_HOST")
+db_port = int(os.getenv("POSTGRES_PORT"))
+db_user = os.getenv("POSTGRES_USER")
+db_password = os.getenv("POSTGRES_PASSWORD")
+db_name = os.getenv("POSTGRES_NAME")
+db_url = os.getenv("POSTGRES_URL")
 
 table_name = "knowledge_base"
 startup_profile_table = "startup_profile"

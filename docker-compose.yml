@@ -35,8 +35,8 @@ services:
     volumes:
       - .:/app
     environment:
-      - APP_SQL_DATABASE_URL=postgresql://postgres:postgres@${DATABASE_HOST}:${DATABASE_PORT}/postgres
-      - SUPABASE_URL=http://${DATABASE_HOST}:${DATABASE_PORT}
+      - APP_SQL_DATABASE_URL=postgresql://postgres:postgres@${POSTGRES_HOST}:${POSTGRES_PORT}/postgres
+      - SUPABASE_URL=http://${POSTGRES_HOST}:${POSTGRES_PORT}
       - SUPABASE_ANON_KEY=your-local-anon-key
     depends_on:
       - db
