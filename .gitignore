@@ -10,3 +10,9 @@ assertion.log
 azure_openai_usage.log
 openai_usage.log
 .aider*
+docker-compose.override.yml
+.env
+node_modules/
+.DS_Store
+Thumbs.db
+

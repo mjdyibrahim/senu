@@ -1,46 +1,72 @@
 # docker-compose.yml
+version: '3.8'
+
 services:
-  app:
-    build: .
-    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+  db:
+    image: postgres:13
+    container_name: senu_db
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - senu_data:/var/lib/postgresql/data
     ports:
-      - "8000:8000"
+      - '5432:5432'  # Expose port 5432 for external access
+    restart: always
+
+  supabase:
+    image: supabase/postgres:0.14.0  # Use a specific version tag
+    container_name: senu_supabase
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      JWT_SECRET: ${JWT_SECRET}
+    ports:
+      - '54321:5432'  # Expose port 54321 for external access
+    depends_on:
+      - db
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Ensure you have a Dockerfile for your app
+    container_name: senu_app
+    ports:
+      - "8000:8000"  # Expose port 8000 for external access
     volumes:
       - .:/app
     environment:
-      - APP_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/senu
+      - APP_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres
+      - SUPABASE_URL=http://supabase:5432
+      - SUPABASE_ANON_KEY=your-local-anon-key
     depends_on:
       - db
+      - supabase
+
   phoenix:
-    image: arizephoenix/phoenix:latest # Must be greater than 4.0 version to work
+    image: arizephoenix/phoenix:latest
+    container_name: senu_phoenix
     depends_on:
       - db
     ports:
-      - 6006:6006  # PHOENIX_PORT
-      - 4317:4317  # PHOENIX_GRPC_PORT
-      - 9090:9090  # [Optional] PROMETHEUS PORT IF ENABLED
+      - 6006:6006  # Expose port 6006 for external access
+      - 4317:4317  # Expose port 4317 for external access
+      - 9090:9090  # Expose port 9090 for external access
     environment:
-      - PHOENIX_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/phoenix
-  db:
-    image: postgres
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
-    ports:
-      - 5432
-    volumes:
-      - database_data:/var/lib/postgresql/data
+      - PHOENIX_SQL_DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres
+
   pgadmin:
     image: dpage/pgadmin4
+    container_name: senu_pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: amagdy3@gmail.com
       PGADMIN_DEFAULT_PASSWORD: amagdy3
     ports:
-      - "5050:80"
+      - "5050:80"  # Expose port 5050 for external access
     depends_on:
       - db
+
 volumes:
-  database_data:
-    driver: local
+  senu_data:

@@ -3,7 +3,7 @@ import os
 # import sys
 import re
 from fastapi import FastAPI, Depends, Request, Form, UploadFile, File, HTTPException
-from fastapi.responses import HTMLResponse, FileResponse
+from fastapi.responses import HTMLResponse, FileResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
@@ -11,6 +11,7 @@ from werkzeug.utils import secure_filename
 from .__init__ import app
 from app.dependencies.auth import get_current_user
 from app.dependencies.database import get_db
+from app.lib.supabase_client import supabase
 import openai
 import pymupdf
 import numpy as np
@@ -21,16 +22,22 @@ import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 import dspy
 
-from opentelemetry import trace as trace_api
-from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
-from opentelemetry.sdk import trace as trace_sdk
-from opentelemetry.sdk.trace.export import SimpleSpanProcessor
+from phoenix.otel import register
+# from opentelemetry import trace as trace_api
+# from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
+# from opentelemetry.sdk import trace as trace_sdk
+# from opentelemetry.sdk.trace.export import SimpleSpanProcessor
 
-tracer_provider = trace_sdk.TracerProvider()
-span_exporter = OTLPSpanExporter("http://localhost:6006/v1/traces")
-span_processor = SimpleSpanProcessor(span_exporter)
-tracer_provider.add_span_processor(span_processor)
-trace_api.set_tracer_provider(tracer_provider)
+tracer_provider = register(
+    project_name="senu_app",
+    endpoint="http://localhost:6006/v1/traces",
+)
+
+# tracer_provider = trace_sdk.TracerProvider()
+# span_exporter = OTLPSpanExporter("http://localhost:6006/v1/traces")
+# span_processor = SimpleSpanProcessor(span_exporter)
+# tracer_provider.add_span_processor(span_processor)
+# trace_api.set_tracer_provider(tracer_provider)
 
 from openinference.instrumentation.dspy import DSPyInstrumentor
 
@@ -452,6 +459,41 @@ async def resources(request: Request):
 async def signin(request: Request):
     """Signin page"""
     return templates.TemplateResponse("signin.html", {"request": request})
+
+@app.post("/register")
+async def register(email: str = Form(...), password: str = Form(...)):
+    try:
+        response = supabase.auth.sign_up({
+            "email": email,
+            "password": password,
+        })
+        return JSONResponse(content={"message": "User registered successfully"}, status_code=200)
+    except Exception as e:
+        return JSONResponse(content={"error": str(e)}, status_code=400)
+
+@app.post("/login")
+async def login(email: str = Form(...), password: str = Form(...)):
+    try:
+        response = supabase.auth.sign_in_with_password({
+            "email": email,
+            "password": password,
+        })
+        return JSONResponse(content={"message": "Login successful", "token": response.session.access_token}, status_code=200)
+    except Exception as e:
+        return JSONResponse(content={"error": str(e)}, status_code=400)
+
+@app.post("/logout")
+async def logout():
+    try:
+        supabase.auth.sign_out()
+        return JSONResponse(content={"message": "Logout successful"}, status_code=200)
+    except Exception as e:
+        return JSONResponse(content={"error": str(e)}, status_code=400)
+
+@app.get("/register")
+async def register_page(request: Request):
+    """Register page"""
+    return templates.TemplateResponse("register.html", {"request": request})
 
 if __name__ == "__main__":
     import uvicorn
