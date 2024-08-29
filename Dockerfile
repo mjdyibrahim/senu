@@ -13,7 +13,7 @@ WORKDIR /app
 COPY ./venv /app/venv
 
 # Set the PATH to use the virtual environment
-ENV PATH="/app/venv/bin:$PATH"
+ENV PATH="/app/venv/lib/python3.11/site-packages:$PATH"
 
 # Install Python dependencies
 COPY requirements.txt .
