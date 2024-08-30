@@ -17,7 +17,7 @@ supabase: Client = create_client(supabase_url, supabase_key)
 
 def fetch_data():
     # Example function to fetch data from a table
-    response = supabase.table('your_table_name').select('*').execute()
+    response = supabase.table('actual_table_name').select('*').execute()
     if response.error:
         print("Error fetching data:", response.error)
     else:
