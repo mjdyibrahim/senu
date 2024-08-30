@@ -5,6 +5,10 @@ from supabase import create_client, Client
 supabase_url = os.environ.get("SUPABASE_URL")
 supabase_key = os.environ.get("SUPABASE_ANON_KEY")
 
+# Debugging: Print the Supabase URL and key
+print("Supabase URL:", supabase_url)
+print("Supabase Key:", supabase_key)
+
 # Initialize the Supabase client
 supabase: Client = create_client(supabase_url, supabase_key)
 
