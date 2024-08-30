@@ -8,10 +8,6 @@ load_dotenv()
 supabase_url = os.environ.get("SUPABASE_URL")
 supabase_key = os.environ.get("SUPABASE_ANON_KEY")
 
-# Debugging: Print the Supabase URL and key
-print("Supabase URL:", supabase_url)
-print("Supabase Key:", supabase_key)
-
 # Check if the environment variables are set
 if not supabase_url or not supabase_key:
     raise ValueError("Supabase URL or Key is not set. Please check your environment variables.")
