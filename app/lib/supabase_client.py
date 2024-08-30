@@ -2,7 +2,7 @@ import os
 from supabase import create_client, Client
 
 # Ensure these environment variables are set in your environment
-supabase_url = os.environ.get("SUPABASE_URL")
+supabase_url = os.environ.get("SUPABASE_URL").replace("postgresql://", "http://")
 supabase_key = os.environ.get("SUPABASE_ANON_KEY")
 
 # Debugging: Print the Supabase URL and key
