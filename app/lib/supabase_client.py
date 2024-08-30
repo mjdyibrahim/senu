@@ -9,6 +9,10 @@ supabase_key = os.environ.get("SUPABASE_ANON_KEY")
 print("Supabase URL:", supabase_url)
 print("Supabase Key:", supabase_key)
 
+# Check if the environment variables are set
+if not supabase_url or not supabase_key:
+    raise ValueError("Supabase URL or Key is not set. Please check your environment variables.")
+
 # Initialize the Supabase client
 supabase: Client = create_client(supabase_url, supabase_key)
 
