@@ -9,11 +9,13 @@ RUN apt-get update && apt-get install -y curl && \
 # Set the working directory in the container
 WORKDIR /app
 
+COPY ./venv .
+
 # Copy the requirements file into the container
 COPY requirements.txt .
 
 # Upgrade pip and install Python dependencies
-# RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
@@ -23,6 +25,7 @@ RUN npm install
 
 # Copy the rest of the application code
 COPY . .
+
 
 EXPOSE 8000
 
