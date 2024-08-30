@@ -40,7 +40,19 @@ def fetch_data():
     else:
         print("Data:", response.data)
 
+def test_connection():
+    try:
+        # Attempt to fetch a small piece of data to test the connection
+        response = supabase.rpc('version').execute()
+        if response.error:
+            print("Connection test failed:", response.error)
+        else:
+            print("Connection test succeeded. Supabase version:", response.data)
+    except Exception as e:
+        print("An error occurred while testing the connection:", e)
+
 if __name__ == "__main__":
+    test_connection()
     print("Connected to Supabase")
     create_test_table()
     fetch_data()
