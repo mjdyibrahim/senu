@@ -31,7 +31,7 @@ def create_test_table():
         print("Error creating table:", response.error)
     else:
         print("Table created or already exists.")
-    # Example function to fetch data from a table
+def fetch_data():
     table_name = 'actual_table_name'  # Replace with your actual table name
     print(f"Fetching data from table: {table_name}")
     response = supabase.table(table_name).select('*').execute()
