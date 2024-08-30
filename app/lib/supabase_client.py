@@ -16,7 +16,21 @@ print(f"Supabase URL: {supabase_url}")
 print(f"Supabase Key: {supabase_key}")
 supabase: Client = create_client(supabase_url, supabase_key)
 
-def fetch_data():
+def create_test_table():
+    # Create a test table if it doesn't exist
+    table_name = 'test_table'
+    print(f"Creating table: {table_name} if it doesn't exist")
+    response = supabase.rpc('create_table_if_not_exists', {
+        'table_name': table_name,
+        'columns': [
+            {'name': 'id', 'type': 'int', 'constraints': 'PRIMARY KEY'},
+            {'name': 'name', 'type': 'text'}
+        ]
+    }).execute()
+    if response.error:
+        print("Error creating table:", response.error)
+    else:
+        print("Table created or already exists.")
     # Example function to fetch data from a table
     table_name = 'actual_table_name'  # Replace with your actual table name
     print(f"Fetching data from table: {table_name}")
@@ -28,4 +42,5 @@ def fetch_data():
 
 if __name__ == "__main__":
     print("Connected to Supabase")
+    create_test_table()
     fetch_data()
