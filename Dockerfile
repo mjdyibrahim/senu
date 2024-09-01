@@ -9,15 +9,13 @@ RUN apt-get update && apt-get install -y curl && \
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the local virtual environment into the container
-COPY ./venv /app/venv
+COPY ./venv .
 
-# Set the PATH to use the virtual environment
-ENV PATH="/app/venv/lib/python3.11/site-packages:$PATH"
-
-# Install Python dependencies
+# Copy the requirements file into the container
 COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+
+# Upgrade pip and install Python dependencies
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
@@ -27,6 +25,7 @@ RUN npm install
 
 # Copy the rest of the application code
 COPY . .
+
 
 EXPOSE 8000
 
