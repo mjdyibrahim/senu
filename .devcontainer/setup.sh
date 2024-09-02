@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Activate the virtual environment
-source /workspace/venv/bin/activate
-
 # Ensure the virtual environment's Python is used
-export PATH="/workspace/venv/bin:$PATH"
+export PATH="/app/venv/bin:$PATH"
+
+# Activate the virtual environment
+source /app/venv/bin/activate
 
 # Upgrade pip
 pip install --upgrade pip
