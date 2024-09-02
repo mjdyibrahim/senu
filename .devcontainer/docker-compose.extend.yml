@@ -4,4 +4,4 @@ services:
     volumes:
       - .:/workspace:cached
       - ./venv:/workspace/venv:cached
-    command: /bin/sh -c "source /workspace/venv/bin/activate && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    command: /bin/sh -c "chmod +x /workspace/.devcontainer/setup.sh && bash /workspace/.devcontainer/setup.sh"
