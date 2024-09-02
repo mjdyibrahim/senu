@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Create the virtual environment if it doesn't exist
-if [ ! -d "/workspace/venv" ]; then
-    python3 -m venv /workspace/venv
-fi
-
 # Activate the virtual environment
 source /workspace/venv/bin/activate
 
@@ -19,4 +14,3 @@ pip install -r /workspace/requirements.txt
 
 # Install Git
 apt-get update && apt-get install -y git
-
