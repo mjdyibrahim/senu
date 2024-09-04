@@ -9,12 +9,16 @@ RUN apt-get update && apt-get install -y curl && \
 # Set the working directory in the container
 WORKDIR /app
 
-COPY ./venv .
+# Copy the entire virtual environment from the local machine
+COPY ./venv /app/venv
+
+# Set the PATH to include the virtual environment's bin directory
+ENV PATH="/app/venv/bin:$PATH"
 
 # Copy the requirements file into the container
-COPY requirements.txt .
+COPY requirements.txt /app/requirements.txt
 
-# Upgrade pip and install Python dependencies
+# Upgrade pip and install any missing Python dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy package.json and package-lock.json into the container
@@ -26,8 +30,7 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-
 EXPOSE 8000
 
 # Command to run the application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

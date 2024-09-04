@@ -1,22 +1,22 @@
 {
-    "name": "Senu App Development",
-    "dockerComposeFile": ["docker-compose.yml", "docker-compose.extend.yml"],
-    "service": "app",
-    "workspaceFolder": "/workspace",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "ms-azuretools.vscode-docker",
-                "ms-vscode-remote.remote-containers",
-                "ms-vscode-remote.remote-ssh",
-                "ms-vscode-remote.remote-ssh-edit",
-                "ms-vscode-remote.remote-wsl",
-                "ms-vscode-remote.remote-wsl-edit"
-            ]
-        }
-    },
-    "forwardPorts": [8008],
-    "postCreateCommand": "/bin/sh -c 'source /workspace/venv/bin/activate && uvicorn app.main:app --host 0.0.0.0 --port 8008'"
+  "name": "Senu App Development",
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.extend.yml"],
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vscode-remote.remote-wsl",
+        "ms-vscode-remote.remote-wsl-edit"
+      ]
+    }
+  },
+  "forwardPorts": [8008, 5432, 54321, 3000],
+  "postCreateCommand": "/bin/sh -c 'source /workspace/venv/bin/activate && uvicorn app.main:app --host 0.0.0.0 --port 8008'"
 }
