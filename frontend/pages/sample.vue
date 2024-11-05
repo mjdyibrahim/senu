@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <Sidebar />
     <main>
       <!-- Main content goes here -->
     </main>
@@ -11,11 +12,13 @@
 <script>
 import Header from '~/components/Header/Header.vue'
 import Footer from '~/components/Footer/Footer.vue'
+import Sidebar from '~/components/Sidebar/Sidebar.vue'
 
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    Sidebar
   }
 }
 </script>

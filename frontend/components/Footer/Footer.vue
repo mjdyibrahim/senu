@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <!-- Your footer content goes here -->
+    <p>&copy; 2024 Senu. All rights reserved.</p>
   </footer>
 </template>
 
