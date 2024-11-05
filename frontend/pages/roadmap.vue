@@ -2,11 +2,8 @@
   <div>
     <Header />
     <main class="main-content">
-      <section class="hero">
-        <!-- Hero section content goes here -->
-      </section>
-      <section class="output">
-        <!-- Output section content goes here -->
+      <section class="roadmap">
+        <!-- Roadmap section content goes here -->
       </section>
     </main>
     <Footer />
