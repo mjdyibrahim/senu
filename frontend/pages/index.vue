@@ -4,6 +4,8 @@
     <main class="main-content">
       <section class="hero">
         <!-- Hero section content goes here -->
+        <PitchDeckUploadForm />
+        <ChatForm />
       </section>
       <section class="output">
         <!-- Output section content goes here -->
@@ -16,11 +18,15 @@
 <script>
 import Header from '~/components/Header/Header.vue'
 import Footer from '~/components/Footer/Footer.vue'
+import PitchDeckUploadForm from '~/components/PitchDeckUploadForm.vue'
+import ChatForm from '~/components/ChatForm.vue'
 
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    PitchDeckUploadForm,
+    ChatForm
   }
 }
 </script>

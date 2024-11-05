@@ -27,23 +27,23 @@ export default {
   },
   mounted() {
     // Burn Rate Graph
-    var burnRateData = {{ burn_rate_data | safe }};
+    var burnRateData = // Fetch data from your backend or use static data
     Plotly.newPlot('burn-rate-graph', burnRateData);
 
     // Customer Lifetime Value (CLV) Graph
-    var clvData = {{ clv_data | safe }};
+    var clvData = // Fetch data from your backend or use static data
     Plotly.newPlot('clv-graph', clvData);
 
     // Customer Acquisition Cost (CAC) Graph
-    var cacData = {{ cac_data | safe }};
+    var cacData = // Fetch data from your backend or use static data
     Plotly.newPlot('cac-graph', cacData);
 
     // Valuation Graph
-    var valuationData = {{ valuation_data | safe }};
+    var valuationData = // Fetch data from your backend or use static data
     Plotly.newPlot('valuation-graph', valuationData);
 
     // Exit Potential Graph
-    var exitPotentialData = {{ exit_potential_data | safe }};
+    var exitPotentialData = // Fetch data from your backend or use static data
     Plotly.newPlot('exit-potential-graph', exitPotentialData);
   }
 }
