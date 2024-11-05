@@ -10,6 +10,12 @@
       <section class="output">
         <!-- Output section content goes here -->
       </section>
+      <section class="feedback">
+        <h2>Your Startup Score & Feedback</h2>
+        <div class="score-details">
+          <!-- Dynamic content for score and feedback will be inserted here -->
+        </div>
+      </section>
     </main>
     <Footer />
   </div>
