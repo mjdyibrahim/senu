@@ -5,12 +5,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss', 
-    '@nuxt/ui', 
-    '@pinia/nuxt', 
-    '@nuxtjs/proxy', 
-    '@pinia-plugin-persistedstate/nuxt', 
-    '@supabase/supabase-js'
+    '@nuxtjs/tailwindcss',
+    // ... rest of the modules
   ],
   css: ['@/assets/css/tailwind.css'],
   tailwindcss: {
@@ -28,16 +24,5 @@ export default defineNuxtConfig({
       plugins: [],
     },
   },
-  proxy: {
-    '/api/': {
-      target: 'http://localhost:8000',
-      pathRewrite: { '^/api/': '' },
-    },
-  },
-  runtimeConfig: {
-    public: {
-      SUPABASE_URL: process.env.SUPABASE_URL,
-      SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
-    },
-  },
+  // ... rest of the configuration
 })
