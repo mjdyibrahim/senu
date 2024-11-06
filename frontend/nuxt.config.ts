@@ -1,6 +1,8 @@
 import { defineNuxtConfig } from "nuxt/config";
+import { config } from 'dotenv';
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
+config({ path: '../.env' }); // Load environment variables from the parent directory
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -23,6 +25,10 @@ export default defineNuxtConfig({
       },
       plugins: [],
     },
+  },
+  env: {
+    SUPABASE_URL: process.env.SUPABASE_URL,
+    // Add other environment variables you need here
   },
   // ... rest of the configuration
 })
