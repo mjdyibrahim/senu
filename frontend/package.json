@@ -1,8 +1,21 @@
 {
-  // ... rest of the package.json
-  "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    // ... rest of the dependencies
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
-  // ... rest of the package.json
+  "dependencies": {
+    "nuxt": "^3.8.2",
+    "plotly.js-dist": "^2.25.0",
+    "vue-server-renderer": "^3.3.11"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@nuxt/devtools": "latest",
+    "nuxt-icon": "^0.5.0"
+  }
 }
