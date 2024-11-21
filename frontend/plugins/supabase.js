@@ -1,8 +1,14 @@
 import { createClient } from "@supabase/supabase-js";
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const supabaseUrl = useRuntimeConfig().public.SUPABASE_URL;
-  const supabaseKey = useRuntimeConfig().public.SUPABASE_ANON_KEY;
+  const config = useRuntimeConfig();
+  const supabaseUrl = config.public.SUPABASE_URL;
+  const supabaseKey = config.public.SUPABASE_ANON_KEY;
+
+  if (!supabaseUrl || !supabaseKey) {
+    throw new Error('Supabase URL and Anon Key are required.');
+  }
+
   const supabase = createClient(supabaseUrl, supabaseKey);
 
   console.log("Supabase URL:", supabaseUrl);
