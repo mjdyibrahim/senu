@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 import { config } from "dotenv";
 
-config({ path: "../.env" }); // Load environment variables from the parent directory
+config(); // Load environment variables from the current directory
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
