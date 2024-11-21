@@ -52,6 +52,8 @@ static_dir = os.path.join(base_dir, "static")
 templates_dir = os.path.join(base_dir, "templates")
 uploads_dir = os.path.abspath(os.path.join(base_dir, "../uploads"))  # Ensure absolute path
 
+load_dotenv()  # Load environment variables from .env file
+
 app.secret_key = os.getenv("SECRET_KEY")  # Load your secret key from .env
 
 # Mount the static directory

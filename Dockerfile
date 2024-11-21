@@ -34,3 +34,10 @@ EXPOSE 8000
 
 # Command to run the application
 # CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+# Build and run the frontend
+WORKDIR /app/frontend
+RUN npm install
+RUN npm run build
+
+EXPOSE 3000
