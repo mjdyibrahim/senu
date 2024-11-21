@@ -3,6 +3,4 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   console.log("Supabase URL:", supabase.supabaseUrl);
   console.log("Supabase Key:", supabase.supabaseKey);
-
-  nuxtApp.provide("supabase", supabase);
 });
