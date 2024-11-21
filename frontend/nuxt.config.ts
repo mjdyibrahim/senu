@@ -1,6 +1,5 @@
 import { defineNuxtConfig } from "nuxt/config";
 import { config } from "dotenv";
-import type { url } from "inspector";
 
 config({ path: "../.env" }); // Load environment variables from the parent directory
 
@@ -30,8 +29,8 @@ export default defineNuxtConfig({
     },
   },
   supabase: {
-    url: process.env.SUPABASE_URL,
-    key: process.env.SUPABASE_ANON_KEY,
+    url: useRuntimeConfig().public.SUPABASE_URL,
+    key: useRuntimeConfig().public.SUPABASE_ANON_KEY,
     redirect: true,
     // Optional: Add other Supabase configurations here
     // redirectOptions: {
