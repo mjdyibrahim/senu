@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt/config";
+import { defineNuxtConfig, useRuntimeConfig } from "nuxt/config";
 import { config } from "dotenv";
 
 config({ path: "../.env" }); // Load environment variables from the parent directory
