@@ -1,5 +1,9 @@
 <template>
-  <!-- ... rest of the template ... -->
+  <div>
+      <Header />
+
+      <Footer />
+  </div>
 </template>
 
 <script>

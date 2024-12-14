@@ -1,12 +1,30 @@
 import { defineStore } from "pinia";
+import type { User } from "#supabase/server";
+
+interface AuthState {
+  user: User | null;
+  loading: boolean;
+  isAuthenticated: false;
+}
 
 export const useAuthStore = defineStore("auth", {
-  state: () => ({
+  state: (): AuthState => ({
     user: null,
+    loading: false,
     isAuthenticated: false,
   }),
 
   actions: {
+    async getUser() {
+      const { $supabase } = useNuxtApp();
+      const {
+        data: { user },
+        error,
+      } = await $supabase.client.auth.getUser();
+      if (error) throw error;
+      this.user = user;
+      return user;
+    },
     async login(credentials: { email: string; password: string }) {
       try {
         const { $supabase } = useNuxtApp();

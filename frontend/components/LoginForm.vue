@@ -1,19 +1,26 @@
 <template>
-    <form @submit.prevent="handleLogin" class="space-y-4">
-        <div>
-            <input v-model="email" type="email" placeholder="Email" required />
+    <form @submit.prevent="handleLogin" class="auth-form space-y-4">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                v-model="email"
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+            />
         </div>
-        <div>
+        <div class="form-group">
+            <label for="password">Password</label>
             <input
                 v-model="password"
                 type="password"
+                id="password"
                 placeholder="Password"
                 required
             />
         </div>
-        <div>
-            <button type="submit">Login</button>
-        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
         <p v-if="error" class="text-red-500">{{ error }}</p>
     </form>
 </template>
@@ -27,6 +34,10 @@ const email = ref("");
 const password = ref("");
 const error = ref("");
 
+onMounted(async () => {
+    await auth.checkAuth();
+});
+
 const handleLogin = async () => {
     try {
         error.value = "";
@@ -39,21 +50,7 @@ const handleLogin = async () => {
     }
 };
 </script>
-``` 7. Update your `app.vue`: ```vue
-<template>
-    <div>
-        <NuxtLayout>
-            <NuxtPage />
-        </NuxtLayout>
-    </div>
-</template>
 
-<script setup>
-import { useAuthStore } from "@/stores/auth";
-
-const auth = useAuthStore();
-
-onMounted(async () => {
-    await auth.checkAuth();
-});
-</script>
+<style>
+@import "@/assets/css/main.css";
+</style>
