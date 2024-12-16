@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Header />
         <main class="main-content">
             <section class="hero">
                 <h1>Virtual Pitch Simulator</h1>
@@ -18,13 +17,12 @@
                 </div>
             </section>
         </main>
-        <Footer />
     </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import Header from "~/components/Header/Header.vue";
+import TheHeader from "~/components/TheHeader.vue";
 import TheFooter from "~/components/TheFooter.vue";
 import PitchDeckUploadForm from "~/components/PitchDeckUploadForm.vue";
 

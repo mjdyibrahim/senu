@@ -15,11 +15,11 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <BaseButton variant="secondary" class="group">
             Explore Services for Entrepreneurs
-            <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Icon name="mdi:arrow-right" class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </BaseButton>
           <BaseButton variant="outline" class="group">
             Order Deliverables for Employers
-            <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Icon name="mdi:arrow-right" class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </BaseButton>
         </div>
       </div>
@@ -28,5 +28,4 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowRight } from 'lucide-vue-next'
 </script>

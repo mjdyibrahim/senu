@@ -48,4 +48,9 @@ export default defineNuxtConfig({
   },
   pinia: {},
   // ... rest of the configuration
+  build: {
+    extend(config) {
+      config.resolve.alias['#supabase/client'] = require.resolve('@supabase/supabase-js');
+    }
+  },
 });

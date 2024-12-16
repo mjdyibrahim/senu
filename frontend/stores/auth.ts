@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import type { User } from "#supabase/server";
+import type { User } from "#supabase/client";
 
 interface AuthState {
   user: User | null;

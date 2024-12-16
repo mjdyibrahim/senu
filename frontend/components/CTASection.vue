@@ -11,7 +11,7 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <BaseButton variant="secondary" class="group">
             Get Started Now
-            <ArrowRight class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Icon name="mdi:arrow-right" class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </BaseButton>
           <a
             href="https://t.me/senuai_bot"
@@ -20,7 +20,7 @@
           >
             <BaseButton variant="outline" class="group w-full sm:w-auto">
               Chat on Telegram
-              <MessageCircle class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Icon name="mdi:message-circle" class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </BaseButton>
           </a>
         </div>
@@ -30,5 +30,4 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowRight, MessageCircle } from 'lucide-vue-next'
 </script>

@@ -1,9 +1,7 @@
 <template>
-  <div class="min-h-screen">
     <TheHeader />
     <NuxtPage />
     <TheFooter />
-  </div>
 </template>
 
 <script setup lang="ts">

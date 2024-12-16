@@ -545,3 +545,8 @@ footer {
 .auth-switch a:hover {
     text-decoration: underline;
 }
+
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #45a049;
+}

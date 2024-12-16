@@ -1,9 +1,9 @@
 <template>
-  <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+  <header class="header fixed w-full backdrop-blur-sm z-50 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center py-4">
         <div class="flex items-center">
-          <span class="text-primary text-2xl font-bold">{{ siteConfig.name }}</span>
+          <span class="text-2xl font-bold">{{ siteConfig.name }}</span>
         </div>
         
         <nav class="hidden md:flex space-x-8">
@@ -54,7 +54,7 @@ import { siteConfig } from '~/config/site'
 <style scoped>
 .header {
   background-color: #1a1a1a; /* Dark background */
-  color: #ffffff; /* White text */
+  color: var(--primary-color); /* White text */
 }
 
 .header .text-primary {
