@@ -36,8 +36,6 @@ const handleFormSubmit = (result) => {
 </script>
 
 <style scoped>
-@import "@/assets/css/main.css";
-
 .main-content {
     padding: 2rem;
     max-width: 1200px;

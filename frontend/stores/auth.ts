@@ -1,11 +1,19 @@
 import { defineStore } from "pinia";
-import type { User } from "#supabase/client";
+import type { User } from "@supabase/supabase-js";
+import { SupabaseClient } from '@supabase/supabase-js'
 
+
+declare module '#app' {
+  interface NuxtApp {
+    $supabase: SupabaseClient
+  }
+}
 interface AuthState {
   user: User | null;
   loading: boolean;
-  isAuthenticated: false;
+  isAuthenticated: boolean;
 }
+
 
 export const useAuthStore = defineStore("auth", {
   state: (): AuthState => ({
@@ -20,7 +28,7 @@ export const useAuthStore = defineStore("auth", {
       const {
         data: { user },
         error,
-      } = await $supabase.client.auth.getUser();
+      } = await $supabase.auth.getUser();
       if (error) throw error;
       this.user = user;
       return user;
@@ -51,20 +59,14 @@ export const useAuthStore = defineStore("auth", {
         const { data, error } = await $supabase.auth.signUp({
           email: credentials.email,
           password: credentials.password,
-          // Optional: Add additional user data
           options: {
             data: {
-              // Add any additional user metadata here
               registered_at: new Date().toISOString(),
             },
           },
         });
 
         if (error) throw error;
-
-        // Optional: Auto-login after registration
-        // this.user = data.user
-        // this.isAuthenticated = true
 
         return data;
       } catch (error) {

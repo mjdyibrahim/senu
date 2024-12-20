@@ -34,6 +34,9 @@ export default defineNuxtConfig({
         extend: {},
       },
       plugins: [],
+      cssPath: "./assets/css/tailwind.css",
+      configPath: "./tailwind.config.ts",
+      exposeConfig: true,
     },
   },
   supabase: {
@@ -49,8 +52,6 @@ export default defineNuxtConfig({
   pinia: {},
   // ... rest of the configuration
   build: {
-    extend(config) {
-      config.resolve.alias['#supabase/client'] = require.resolve('@supabase/supabase-js');
-    }
+    transpile: ['@supabase/supabase-js'],
   },
 });

@@ -6,7 +6,7 @@
     
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
       <div class="text-center">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-6">
           AI-Powered Solutions for Entrepreneurs and Employers
         </h1>
         <p class="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto">
@@ -29,3 +29,23 @@
 
 <script setup lang="ts">
 </script>
+
+<style scoped>
+.hero {
+  @apply bg-accent-purple text-white py-12 px-5 text-center min-h-[650px] relative overflow-hidden;
+}
+
+.hero h2 {
+  @apply text-4xl mb-5;
+}
+
+.hero p {
+  @apply text-lg mb-5;
+}
+
+.hero form {
+  @apply flex flex-col md:flex-row items-center justify-center gap-12 my-12 border-2 border-white;
+}
+
+/* ... other hero-specific styles ... */
+</style>

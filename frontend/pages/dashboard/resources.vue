@@ -23,6 +23,13 @@ export default {
 </script>
 
 <style scoped>
-/* Import main style */
-@import "@/assets/css/main.css";
+.resources {
+  @apply py-12 px-5 text-center;
+}
+
+.resource-list {
+  @apply bg-white p-5 rounded-lg shadow-md max-w-4xl mx-auto text-left;
+}
+
+/* ... other resources-specific styles ... */
 </style>

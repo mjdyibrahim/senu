@@ -3,6 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center">
         <div>
+          <h1 class="text-2xl font-bold">Senu AI</h1>
           <h2 class="text-lg font-bold">Empowering Economic Builders</h2>
           <p class="mt-1 text-sm">AI that empowers economic builders in emerging markets.</p>
         </div>
@@ -29,5 +30,7 @@
 </script>
 
 <style scoped>
-/* Add any specific styles for the footer here */
+footer {
+  @apply text-white text-center py-3 relative bottom-0 w-full;
+}
 </style>

@@ -24,5 +24,4 @@ export default {
 
 <style scoped>
 /* Import main style */
-@import "@/assets/css/main.css";
 </style>

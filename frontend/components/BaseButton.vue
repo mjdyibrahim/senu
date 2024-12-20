@@ -1,30 +1,18 @@
 <template>
-  <button
+  <button 
     :class="[
-      'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-6 py-2',
-      variantClasses[variant],
-      className
+      'px-6 py-3 rounded-lg transition-colors duration-200',
+      variant === 'secondary' ? 'bg-accent-purple text-white hover:bg-purple-700' :
+      variant === 'outline' ? 'border-2 border-accent-purple text-accent-purple hover:bg-accent-purple hover:text-white' :
+      'bg-primary-dark text-white hover:bg-primary-dark/90'
     ]"
-    v-bind="$attrs"
   >
     <slot />
   </button>
 </template>
 
 <script setup lang="ts">
-interface Props {
+defineProps<{
   variant?: 'primary' | 'secondary' | 'outline'
-  className?: string
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  variant: 'primary',
-  className: ''
-})
-
-const variantClasses = {
-  primary: 'bg-primary text-white hover:bg-primary/90',
-  secondary: 'bg-secondary text-primary hover:bg-secondary/90',
-  outline: 'border-2 border-white text-white hover:bg-white/10'
-}
+}>()
 </script>

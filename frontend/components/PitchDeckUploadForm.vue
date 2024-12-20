@@ -91,7 +91,6 @@ const handleSubmit = async () => {
 
 <style scoped>
 /* Import your main styles */
-@import "@/assets/css/main.css";
 
 .pitch-deck-form-container {
     width: 100%; /* Take full width of parent */

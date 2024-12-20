@@ -33,6 +33,4 @@ export default {
 <style scoped>
 /* Your styles go here */
 
-/* Import main style */
-@import "@/assets/css/main.css";
 </style>

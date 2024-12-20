@@ -1,5 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Your custom styles go here */
+/* Tailwind Layers */
+@layer base {
+  body {
+    @apply m-0 p-0 flex flex-col font-['Inter_Tight'] bg-background-light text-primary-dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply box-border m-0 p-0;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-8;
+  }
+
+  .button {
+    @apply bg-accent-purple text-primary-light py-3 px-6 rounded-lg border-none cursor-pointer 
+           transition-colors duration-300 hover:bg-[rgb(81,72,217)];
+  }
+
+  .nav {
+    @apply flex justify-between items-center py-4;
+  }
+
+  .auth-section {
+    @apply max-w-md mx-auto my-8 p-8 bg-white rounded-lg shadow-md;
+  }
+
+  .loader {
+    @apply border-4 border-gray-200 rounded-full w-10 h-10 animate-spin;
+    border-top-color: var(--accent-purple);
+  }
+}
+
+@layer utilities {
+  .gradient-background {
+    @apply fixed inset-0 bg-background-light -z-10;
+  }
+}
